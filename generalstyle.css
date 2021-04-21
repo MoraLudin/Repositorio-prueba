@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-section{
-=======
 
     *{
->>>>>>> c9c052a96f5a913777c9fa85671a943368e75663
     list-style: none;
     background-color: rgb(165, 150, 150);
     background-repeat: no-repeat;
@@ -27,26 +23,4 @@ header{
     list-style: none;
     text-decoration: none;
     
-<<<<<<< HEAD
-}
-.buttonheader{
-    size: 5p0;
-
-}
-footer{
-    background-color: rgba(0, 0, 0, 0.76);
-    color: cornsilk;
-    
-}
-.footerdiv{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 5px;
-    padding: 5px;
-
-
-=======
->>>>>>> c9c052a96f5a913777c9fa85671a943368e75663
 }
