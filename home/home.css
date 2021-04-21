@@ -1,12 +1,18 @@
- .homesongs{
+ .songs{
     display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    height: 20%;
-    width: 20%;
-    margin: 10px;
-    padding: 10px;
-    justify-content: center;
-    flex-wrap: nowrap;
-}
+     justify-content: space-between;
+     flex-direction: row;
+     box-sizing: border-box;
+     justify-content: center;
+     flex-wrap: wrap;
+     
+ }
+ .peaches{
+     width: 95%;
+ }
+
+ .homesongs{
+     width: 18%;
+ }
+
   

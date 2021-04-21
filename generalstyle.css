@@ -15,29 +15,29 @@ header{
     justify-content: space-around;
     list-style: none;
     text-decoration: none;
+    align-items: center;
+    size: 20%;
+
+
+}
+.headerlist{
+  margin-right: 5%;
+  justify-content: space-between;
 }
 
 .logo{
     display: flex;
-     flex-direction: column;
+    flex-direction: column;
     box-sizing: border-box;
     padding: 10px;
     height: 120px;
     width: 140px;
-
 }
-.headerlist{
-    list-style: none;
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    box-sizing: border-box;
-    justify-content: space-around;
-    
+     
 }
 .buttonheader{
     height: 20px;
-    width: 50px;
+    width: 60px;
 
 }
 footer{
@@ -52,6 +52,8 @@ footer{
     justify-content: space-around;
     margin: 5px;
     padding: 5px;
+}
 
+@media(max-width:420px){
 
 }
