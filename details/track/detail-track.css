@@ -32,3 +32,12 @@ div{
     color: white;
     justify-content: center;
 }
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.playlist{
+    color: black;
+}
