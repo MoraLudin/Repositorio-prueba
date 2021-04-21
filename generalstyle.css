@@ -15,15 +15,29 @@ header{
     justify-content: space-around;
     list-style: none;
     text-decoration: none;
+}
+
+.logo{
+    display: flex;
+     flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    height: 120px;
+    width: 140px;
 
 }
 .headerlist{
     list-style: none;
     text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-around;
     
 }
 .buttonheader{
-    size: 5p0;
+    height: 20px;
+    width: 50px;
 
 }
 footer{
