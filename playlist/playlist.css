@@ -8,3 +8,9 @@ div{
     color: white;
     justify-content: center;
 }
+
+.playlistsongs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
