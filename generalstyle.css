@@ -10,7 +10,7 @@ section{
 }
 header{
     display: flex;
-    background-color: lightgreen;
+    background-color:rgb(165, 150, 150);
     flex-direction: row;
     justify-content: space-around;
     list-style: none;
@@ -21,7 +21,7 @@ header{
 
 }
 .headerlist{
-  margin-right: 5%;
+  margin-right: 15%;
   justify-content: space-between;
 }
 
@@ -29,15 +29,16 @@ header{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    padding: 10px;
-    height: 120px;
-    width: 140px;
+    padding: 2%;
+    height: 10%;
+    width: 15%;
+    border-radius: 80%;
 }
      
 }
 .buttonheader{
-    height: 20px;
-    width: 60px;
+    height: 10%;
+    width: 20%;
 
 }
 footer{
@@ -50,9 +51,23 @@ footer{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    margin: 5px;
-    padding: 5px;
+    margin: 2%;
+    padding: 2%;
 }
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+h2{
+    color: white;
+}
+
+h3{
+    color: red;
+}
+
 
 @media(max-width:420px){
 

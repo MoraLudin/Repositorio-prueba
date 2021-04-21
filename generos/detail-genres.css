@@ -10,13 +10,22 @@ h3{
     color: white;
 }
 
-.rockgenero{
+genero{
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
+     justify-content: space-between;
+     flex-direction: row;
+     box-sizing: border-box;
+     justify-content: center;
+     flex-wrap: wrap;
+     width: 95%;
+     
+ }
 
-img{
-    width: 300px;
-    height: 300px;
-}
+ .rockgenero{
+     width: 18%;
+ }
+ .rock{
+     width: 95%;
+ }
+
+ 
