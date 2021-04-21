@@ -1,4 +1,4 @@
-*{
+section{
     list-style: none;
     background-color: rgb(165, 150, 150);
     background-repeat: no-repeat;
@@ -11,6 +11,34 @@
 header{
     display: flex;
     background-color: lightgreen;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.headerlist{
+    list-style: none;
+    text-decoration: none;
     
 }
+.buttonheader{
+    size: 5p0;
+
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.76);
+    color: cornsilk;
+    
+}
+.footerdiv{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 5px;
+    padding: 5px;
+
+
 }
