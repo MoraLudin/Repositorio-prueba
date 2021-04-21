@@ -28,3 +28,8 @@ div{
     border: 30px
     
 }
+
+a{
+    text-decoration: none;
+    color: white;
+}

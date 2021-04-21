@@ -1,0 +1,18 @@
+ .songs,.albums,.artists{
+    display: flex;
+     justify-content: space-between;
+     flex-direction: row;
+     box-sizing: border-box;
+     justify-content: center;
+     flex-wrap: wrap;
+     
+ }
+ .peaches,.devil,.morat{
+     width: 95%;
+ }
+
+ .homesongs,.homealbums,.homeartist{
+     width: 18%;
+ }
+
+  
