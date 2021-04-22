@@ -10,13 +10,21 @@ h3{
     color: white;
 }
 
-.rockgenero{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
+/* .generos{
+     display: flex;
+     justify-content: space-between;
+     flex-direction: row;
+     box-sizing: border-box;
+     justify-content: center;
+     width: 100%;
+     
+ } */
 
-img{
-    width: 300px;
-    height: 300px;
-}
+ .rockgenero{
+     width: 18%;
+ }
+ .rock{
+     width: 95%;
+ }
+
+ 
