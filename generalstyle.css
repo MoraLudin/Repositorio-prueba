@@ -74,6 +74,83 @@ h2{
 }
 
 
-@media(max-width:420px){
+@media(max-width:460px)
+
+header{
+    display: flex;
+    background-color:rgba(29, 25, 34, 0.221);
+    flex-direction: row;
+    justify-content: space-around; 
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
 
 }
+    
+
+    .headerlist{
+        display: flex;
+        width:70%;
+        justify-content: space-around;
+      }
+      .list{
+          color: black;
+          font-size: 10%;
+      }
+
+      .boton{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          width: 55%;
+          height: 55%;
+      }
+      
+      .logo{
+          display: flex;
+          flex-direction: column;
+          box-sizing: border-box;
+          padding: 2%;
+          height: 15%;
+          width: 15%;
+          border-radius: 80%;
+      }
+
+    
+           
+      .buttonheader{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          height: 25%;
+          width: 25%;
+      
+      }
+      footer{
+          background-color: rgba(0, 0, 0, 0.838);
+          color: cornsilk;
+          
+      }
+      .footerdiv{
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: space-around;
+          margin: 1%;
+          padding: 2%;
+      }
+      
+      a{
+          color:white;
+          text-decoration: none;
+      }
+      
+      h2{
+          color: white;
+      }
+      
+      .flame{
+          color: red;
+          font-size: 70%;
+      }
+      
