@@ -15,4 +15,35 @@
      width: 18%;
  }
 
-  
+ @media(max-width 460px)
+ .songs,.albums,.artists{
+    display: flex;
+     justify-content: space-between;
+     flex-direction: row;
+     box-sizing: border-box;
+     justify-content: center;
+     flex-wrap: wrap;
+
+ .peaches,.devil,.morat{
+     width: 55%;
+ }
+
+ .homesongs,.homealbums,.homeartist{
+     width: 10%;
+ }
+
+ a{
+     display: flex;
+     flex-direction: column;
+     flex-wrap: nowrap;
+     width: auto;
+     height: auto;
+ }
+
+ h2{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     width: 5%;
+     height: 5%;
+ }
