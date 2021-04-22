@@ -1,6 +1,6 @@
 section{
     list-style: none;
-    background-color: rgb(165, 150, 150);
+    background-color: rgba(11, 5, 5, 0.646);
     background-repeat: no-repeat;
     box-sizing: border-box;
     padding: 0;
@@ -8,21 +8,26 @@ section{
     font-family: 'Arvo', serif;
     text-decoration: none;
 }
+  
 header{
     display: flex;
-    background-color:rgb(165, 150, 150);
+    background-color:rgba(29, 25, 34, 0.221);
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-around; 
     list-style: none;
     text-decoration: none;
     align-items: center;
-    size: 20%;
-
-
+   
 }
+
 .headerlist{
-  margin-right: 15%;
-  justify-content: space-between;
+  display: flex;
+  width: 45%;
+  justify-content: space-around;
+}
+.list{
+    color: black;
+    font-size: 120%;
 }
 
 .logo{
@@ -35,14 +40,13 @@ header{
     border-radius: 80%;
 }
      
-}
 .buttonheader{
     height: 10%;
-    width: 20%;
+    width: 26%;
 
 }
 footer{
-    background-color: rgba(0, 0, 0, 0.76);
+    background-color: rgba(0, 0, 0, 0.838);
     color: cornsilk;
     
 }
@@ -64,8 +68,9 @@ h2{
     color: white;
 }
 
-h3{
+.flame{
     color: red;
+    font-size: 230%;
 }
 
 

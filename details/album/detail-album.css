@@ -3,12 +3,14 @@
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content:flex-start;
-    width: 10px;
-    height: 400px;
-    margin-left: 420px;
-    padding: 0px;
-    border-radius: 50%;
+    justify-content:center;
+    width: 64%;
+   
+}
+.demialbum{
+    width: 50%;
+    height: 100%; 
+  margin-left: 50%;
 }
 
 div{
@@ -21,19 +23,38 @@ div{
     color: white;
     justify-content: center;
 }
-
-.dancingsongs{
-    margin-left: 420px;
-    width: 320px;
-    padding: 20px;
-    border: 30px
-    
-    
+.deminame{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-right: 3%;
+    margin-left: 8%; 
+}
+.canciones{
+    display: flex;
+    box-sizing: border-box;
+    width: 30%;
+    margin-right: 30%;
+    margin-left: 37%;
+    margin-top: 5%;
+    align-items: center;
+    align-content: center;
+    color: black;
+    border-style: double;
+    font-size: 110%;
+}
+.anyone{
+   display: flex;
+    width: 7%;
+    height: 7%;
+    border-radius: 30%;
+    margin-right: 4%;
+    margin-left: 4%;
 }
 
-a{
-    text-decoration: none;
-    color: white;
+ .dancingsongs{
+     width: 85%;
 }
-
-
