@@ -17,14 +17,21 @@ h1{
      box-sizing: border-box;
      justify-content: center;
      width: 100%;
-     
+    
  } 
 
+h2{
+    text-align: center;
+}
  .rockgenero1,.rockgenero2{
      width: 18%;
+     margin-right: 2%;
+     margin-left: 2%;
+     margin-bottom: 2%;
  }
  .rock{
      width: 95%;
+     border-radius: 50%;
  }
 
  
