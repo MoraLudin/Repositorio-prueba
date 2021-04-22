@@ -1,5 +1,5 @@
 
- }
+ 
  .miplaylist,.miplaylist1{
     display: flex;
     justify-content: space-between;
@@ -12,7 +12,6 @@
  }
  .playimage{
      width: 5%;
-     background-color: cyan; 
      border-radius: 50%;
      margin-left: 2%;
      margin-top: 0,5%;
