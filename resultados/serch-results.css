@@ -1,0 +1,24 @@
+.resultados{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+    width: 100%;
+   
+} 
+
+h2{
+   text-align: center;
+}
+.busqueda,.busqueda1,.busqueda2{
+    width: 30%;
+    margin-right: 2%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+.imgsrch{
+    width: 95%;
+    border-radius: 50%;
+}
+
