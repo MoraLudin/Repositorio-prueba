@@ -5,8 +5,10 @@
     text-align: center;
     align-items: center;
     align-content: center;
-    font-size: 180%;
-    padding-top: 3%;
+    font-size: 190%;
+    padding-top: 2%;
+    margin-left: 2%;
+
 }
 
 .resultados{
@@ -17,6 +19,8 @@
     justify-content: center;
     width: 100%;
     margin-left: 25%;
+    margin-bottom: 2%;
+    padding-bottom: 2%;
 } 
 .relacionados{
     display: flex;
@@ -33,11 +37,12 @@
    text-align: center;
    font-size: 150%;
    justify-content: center;
-    margin-left: 12%;
+    margin-left: 16%;
     margin-right: 10%; 
     margin-bottom: 3%;
     padding: 1%;
-    color:black;
+    align-content: center;
+    color:white;
   
 }
 .busqueda{
@@ -48,7 +53,8 @@
     text-align: center;
    align-content: center;
    width: 60%;
- 
+   justify-content: center;
+   font-size: 107%;
 }
 
 .busqueda1,.busqueda2{
@@ -58,13 +64,10 @@
     margin-bottom: 2%;
 }
 .imgsrch{
-  /*   display: flex; */
     width: 82%;
     border-radius: 20%;
     margin-left: 8%;
     margin-bottom: 4%;
-    /* justify-content: center;
-    align-items: center;
-    align-content: center; */
+   
 }
 
