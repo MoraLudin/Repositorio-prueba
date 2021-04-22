@@ -22,7 +22,7 @@
 
  }
 
- @media(max-width 460px){
+ @media(max-width: 460px){
  .songs,.albums,.artists{
      display: flex;
      justify-content: space-between;
@@ -53,10 +53,11 @@
      height: auto;
  }
 
- .titles{
+ .titles {
      display: flex;
      flex-direction: row;
      flex-wrap: nowrap;
      width: 5%;
      height: 5%;
- }
+    }
+}
