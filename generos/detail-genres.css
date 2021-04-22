@@ -1,16 +1,17 @@
 h1{
-    color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+  
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    font-size: 180%;
+    padding-top: 3%;
 }
 
-h2{
-    color: white;
-}
 
-h3{
-    color: white;
-}
-
-/* .generos{
+.generos1,.generos2{
      display: flex;
      justify-content: space-between;
      flex-direction: row;
@@ -18,9 +19,9 @@ h3{
      justify-content: center;
      width: 100%;
      
- } */
+ } 
 
- .rockgenero{
+ .rockgenero1,.rockgenero2{
      width: 18%;
  }
  .rock{
