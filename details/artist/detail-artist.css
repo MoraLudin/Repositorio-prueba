@@ -1,35 +1,59 @@
+
+.artistmorat{
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    justify-content: center;
+    color: white;
+    font-size: 140%;
+}
+
+.top5canciones{
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    justify-content: center;
+    color: rgb(7, 6, 6);
+    font-size: 200%;
+}
+
 .imgmorat{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    justify-content:flex-start;
-    width: 10px;
-    height: 400px;
-    margin-left: 220px;
-    padding: 0px;
-    border-radius: 50%;
+    justify-content:center;
+    width: 64%; 
+ 
 }
 
-div{
+.perfilmorat{
+    width: 100%;
+    height: 100%; 
+  margin-left: 50%;
+}
+
+.top{
     display: flex;
-    flex-wrap: nowrap;
-    margin-left: 30px;
-    padding: 10px;
-    border: 10px;
-    text-decoration: none;
-    color: white;
-    justify-content: center;
-}
+     justify-content: space-between;
+     flex-direction: row;
+     box-sizing: border-box;
+     justify-content: center;
+     flex-wrap: nowrap;
+     margin-left: 3%;
+     margin-right: 3%;
+  
+     
+ }
+ .morat5{
+     width: 90%;
+     margin-right: 4%;
+     margin-left: 4%%;
+     padding: 2%;
+     border-radius: 50%;  
 
-.dancingsongs{
-    margin-left: 420px;
-    width: 400px;
-    padding: 20px;
-    border: 30px
-    
-}
+ }
 
-a{
-    text-decoration: none;
-    color: white;
-}
+ .artissongs{
+     width: 13%;
+ 
+ }
