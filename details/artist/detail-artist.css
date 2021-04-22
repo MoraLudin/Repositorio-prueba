@@ -22,7 +22,7 @@
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content:center;
-    width: 64%; 
+    width: 65%; 
  
 }
 
@@ -47,7 +47,7 @@
  .morat5{
      width: 90%;
      margin-right: 4%;
-     margin-left: 4%%;
+     margin-left: 4%;
      padding: 2%;
      border-radius: 50%;  
 
