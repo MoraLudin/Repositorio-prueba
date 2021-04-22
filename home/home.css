@@ -25,7 +25,12 @@
      flex-wrap: wrap;
 
  .peaches,.devil,.morat{
+     display: flex;
+     flex-direction: column;
+     flex-wrap: nowrap;
      width: 55%;
+     height: auto;
+     border-radius: 80%;
  }
 
  .homesongs,.homealbums,.homeartist{
