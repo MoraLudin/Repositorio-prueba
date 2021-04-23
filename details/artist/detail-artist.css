@@ -8,6 +8,21 @@
     font-size: 140%;
 }
 
+.wikipedia{
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    font-size: 100%;
+    margin-right: 17%;
+    margin-left: 16%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    font-style: italic;
+}
+
 .top5canciones{
     display: flex;
     box-sizing: border-box;
@@ -53,6 +68,9 @@
 
  }
 
+ h2{
+     text-align: center;
+ }
  .artissongs{
      width: 13%;
  
@@ -83,7 +101,7 @@
         flex-wrap: nowrap;
         justify-content: center;
         color: white;
-        font-size: 80%;
+        font-size: 100%;
         margin-top: 3%;
     }
     
@@ -92,9 +110,9 @@
         box-sizing: border-box;
         flex-wrap: nowrap;
         justify-content: center;
-        color: rgb(7, 6, 6);
-        font-size: 110%;
-        margin-top: 10%;
+        color: white;
+        font-size: 130%;
+        margin-top: 5%;
     }
     .imgmorat{
         display: flex;
@@ -102,7 +120,7 @@
         flex-direction: row;
         justify-content:center;
         width: 85%; 
-        margin-top: 5%;
+        margin-top: 2%;
     
     }
 
@@ -111,5 +129,20 @@
     height: 100%; 
   margin-left: 20%; 
  
+    }
+
+    .wikipedia{
+        display: flex;
+        box-sizing: border-box;
+        flex-wrap: nowrap;
+        justify-content: center;
+        text-align: center;
+        color: black;
+        font-size: 80%;
+        margin-right: 10%;
+        margin-left: 10%;
+        margin-top: 2%;
+        margin-bottom: 5%;
+        font-style: italic;
     }
  }
