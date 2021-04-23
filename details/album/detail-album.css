@@ -42,11 +42,11 @@
     color: black;
     width: 30%;
     margin-right: 50%;
-    margin-left: 3%;
+    margin-left: 1%;
     text-decoration: underline;
     font-size: 130%;
-
  }
+ 
  .canciongrande{
     display: flex;
     box-sizing: border-box;
@@ -62,13 +62,13 @@
  
 .anyone{
     display: flex;
-    width: 50%
+    width: 40%;
     border-radius: 30%;
-   /*  margin-right: 4%;
+    margin-right: 4%;
     margin-left: 4%;
     margin-top: 2%;
-    margin-bottom: 2%; */
-} 
+    margin-bottom: 3%;
+ } 
 
  .dancingsongs{
      display: flex;
@@ -84,4 +84,63 @@
     color: black;
     font-size: 120%;
     align-items: center;
+}
+@media(max-width:420px){
+
+ .albumpic{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content:center;
+    width: 100%;
+ }
+ 
+ .demialbum{
+    width: 70%;
+    margin-left: 0%;
+ }
+ .deminame{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-right: 3%;
+    color: white;
+    font-size: 100%;
+ }
+ .anyone{
+        display: flex;
+        width: 20%;
+        border-radius: 30%;
+        margin-right: 4%;
+        margin-left: 4%;
+        margin-top: 2%;
+        margin-bottom: 3%;
+ } 
+ .canciongrande{
+    display: none;
+    box-sizing: none;
+    flex-direction: none;
+    width: 0;
+ }
+ .seccion1,.seccion2{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 100%;
+ }
+
+ .canciones{
+        display: flex;
+        box-sizing: border-box;
+        justify-content: left;
+        color: black;
+        width: 30%;
+        margin-right: 50%;
+        margin-left: 1%;
+        text-decoration: underline;
+        font-size: 130%;
+        margin-top: 13%;
+     }
 }

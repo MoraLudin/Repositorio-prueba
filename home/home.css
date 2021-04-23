@@ -40,8 +40,6 @@
      flex-wrap: nowrap;
      width: 85%;
      height: auto;
-    /*  border-radius: 50%; */
-     /* justify-content: space-around; */
  }
 
  .homesongs,.homealbums,.homeartist{
@@ -49,11 +47,10 @@
      display: flex;
      flex-direction: column;
      justify-content: space-between;
-  /*    margin: 5%; */
-    margin-left: 5%;
-    margin-bottom: 2%;
-    margin-top: 2%;
-    align-items: center ;
+     margin-left: 5%;
+     margin-bottom: 2%;
+     margin-top: 2%;
+     align-items: center ;
  }
 
  a{
