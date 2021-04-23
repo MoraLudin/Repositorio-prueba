@@ -6,6 +6,7 @@
     justify-content: center;
     color: white;
     font-size: 140%;
+    margin-top: 2%;
 }
 
 .wikipedia{
@@ -127,7 +128,7 @@
    .perfilmorat{
     width: 100%;
     height: 100%; 
-  margin-left: 20%; 
+    margin-left: 20%; 
  
     }
 
