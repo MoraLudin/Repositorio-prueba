@@ -142,5 +142,16 @@
         text-decoration: underline;
         font-size: 130%;
         margin-top: 13%;
-     }
+ }
+ .dancing{
+    color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    font-size: 160%;
+    padding-top: 2%;
+    margin-top: 3%;
+}
 }
