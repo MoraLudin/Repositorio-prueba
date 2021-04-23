@@ -44,10 +44,41 @@ h1{
     background-image: url(../generos/imggeneros/fondo4.jpeg);
 }
 
-.a{
+/* .a{
     width: 100%;
     margin: 5%;
-}
+} */
 h3{
     color: black;
+}
+
+@media(max-width:420px){
+.boxgenero2,.boxgenero3,.boxgenero4{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    margin-top: 8%; 
+} 
+
+.boxgenero4{
+    padding-bottom: 3%;
+}
+
+.buttongeneros2,.buttongeneros3,.buttongeneros4{
+    width: 60%;
+    height: 50%;
+    margin: 1%;
+    padding: 1%; 
+    text-align: center;
+    font-size: 110%;
+}
+
+.buttongeneros1{
+    display: none;
+}
+
 }

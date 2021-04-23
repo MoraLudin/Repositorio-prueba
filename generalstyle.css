@@ -80,6 +80,7 @@ h2{
         list-style: none;
         text-decoration: none;
        align-items: center;
+       margin-right: 1%;
  }
  .logo{
     display: flex;
@@ -107,7 +108,7 @@ h2{
     
  .list{
     color: black;
-    font-size: 90%;
+    font-size: 98%;
  }
  form{
      margin-bottom: 2%;

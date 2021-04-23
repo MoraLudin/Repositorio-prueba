@@ -21,6 +21,7 @@
     margin-bottom: 2%;
     padding-bottom: 2%;
 } 
+
 .relacionados{
     display: flex;
     justify-content: space-around;
@@ -32,14 +33,13 @@
     margin-right: 1%;
 
 }
+
 .peachtext{
    text-align: center;
    font-size: 150%;
    justify-content: center;
-    margin-left: 11%;
-    margin-right: 10%; 
-    margin-bottom: 3%;
-    padding: 1%;
+   margin-bottom: 3%;
+   padding: 1%;
     align-content: center;
     color:white;
   
@@ -62,27 +62,29 @@
     margin-left: 2%;
     margin-bottom: 2%;
 }
-.imgsrch{
+
+.imgsrch,.imgsrch1{
     width: 82%;
     border-radius: 20%;
     margin-left: 8%;
     margin-bottom: 4%;
-   
+
 }
 
 @media(max-width:420px){
-    /* .resultados{
+  
+    .semuestran{
+        color: black;
         display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        box-sizing: border-box;
-        justify-content: center;
-        width: 100%;
-        margin-left: 25%;
-        margin-bottom: 2%;
-        padding-bottom: 2%;
-    } */
-    .resultados,.relacionados{
+        justify-content: flex-start;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        font-size: 160%;
+        padding-top: 1%;
+        margin-left: 2%;
+    }
+    .resultados{
         display: flex;
         justify-content: space-around;
         flex-direction: column;
@@ -93,24 +95,46 @@
         margin-right: 1%;
         align-items: center;
     }
-    
-    .busqueda,.busqueda1,.busqueda2{
-            width: 60%;
-            margin-bottom: 4%;
-         
+
+    .relacionados{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        box-sizing: border-box;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: 1%;
+        margin-right: 1%;
+        align-items: center;
+    }
+    .busqueda{
+        display: flex;
+        justify-content: flex-start;
+        box-sizing: border-box;
+        flex-direction: column;
+        width: 100%;
+    }
+    .busqueda1,.busqueda2{
+        display: flex;
+        justify-content: flex-start;
+        box-sizing: border-box;
+        flex-direction: column;
+        width: 30%;
     }
     .relatext,.peachtext{
        text-align: center;
        align-content: center;
-       width: 60%;
+       width: 100%;
        justify-content: center;
        font-size: 107%;
        justify-content: space-around;
-       margin-left: 3%;
+       margin-left: 1%;
        align-items: center;
-
     }
-    
-    
 
+    .imgsrch1,.imgsrch{
+        flex-direction: row;
+        display: flex;
+        justify-content: flex-start;
+    }
 }
