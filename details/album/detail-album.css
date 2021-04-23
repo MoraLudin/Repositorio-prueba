@@ -47,14 +47,28 @@
     font-size: 130%;
 
  }
+ .canciongrande{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    width: 100%;
+ }
+ .seccion1,.seccion2{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    width: 100%;
+ }
+ 
 .anyone{
-    width: 9%;
+    display: flex;
+    width: 50%;
     height: 9%;
     border-radius: 30%;
-    margin-right: 4%;
+   /*  margin-right: 4%;
     margin-left: 4%;
     margin-top: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 2%; */
 } 
 
  .dancingsongs{

@@ -57,3 +57,59 @@
      width: 13%;
  
  }
+
+ @media(max-width:420px){
+    .morat5{
+        width: 97%;
+        margin-right: 4%;
+        margin-left: 4%;
+        padding: 2%;
+        border-radius: 50%;  
+   
+    }
+   
+    .artissongs{
+        width: 60%;
+        margin-bottom: 3%;
+    
+    }
+    h2{
+        font-size: 85%;
+        text-align: center;
+    }
+    .artistmorat{
+        display: flex;
+        box-sizing: border-box;
+        flex-wrap: nowrap;
+        justify-content: center;
+        color: white;
+        font-size: 80%;
+        margin-top: 3%;
+    }
+    
+    .top5canciones{
+        display: flex;
+        box-sizing: border-box;
+        flex-wrap: nowrap;
+        justify-content: center;
+        color: rgb(7, 6, 6);
+        font-size: 110%;
+        margin-top: 10%;
+    }
+    .imgmorat{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content:center;
+        width: 85%; 
+        margin-top: 5%;
+    
+    }
+
+   .perfilmorat{
+    width: 100%;
+    height: 100%; 
+  margin-left: 20%; 
+ 
+    }
+ }
