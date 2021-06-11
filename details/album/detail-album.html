@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
 </head>
 <body>
+    <script src="../../general.js"></script>
     <header>
         <img class="logo" src="../../home/img/icono-logo-design-element-de-la-llama-del-fuego-de-la-música-95598778.jpeg" alt="fire logo">
         <h3 class="flame">FlameMusic</h3>  
@@ -21,8 +22,8 @@
           <a class="list" href="detail-album.html">Album</a>
           <a class="list" href="../track/detail-track.html">Canciones</a>
         </div>
-        <form action="../../resultados/search-results.html" method="GET">
-          <input type="text" value="Cancion...">
+        <form id="busqueda" action="../../resultados/search-results.html" method="GET">
+          <input type="text" id="buscador" placeholder="Buscar artista" class="boton">
           <button class="buttonheader" type="submit" value="Buscar">Buscar</button>
         </form>
      </header>
