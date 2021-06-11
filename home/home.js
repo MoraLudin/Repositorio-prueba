@@ -11,8 +11,19 @@ window.addEventListener('load', function(){
     })
     .then(function(datos){
         console.log(datos);
-        let peachestrack = document.querySelector(".trackpeaches");
-        peachestrack.innerHTML += `<img class="peaches" src= "${datos.album.cover_medium}">`;
+    /* imagen y info track peaches desde api */
+        let peachestrackimg = document.querySelector(".trackpeaches");
+        peachestrackimg.innerHTML += `
+        <img class="peaches" src= "${datos.album.cover_medium}"> 
+        <h3>${datos.title}</h3> 
+        `;
+    
+    /* no fucniona la info */
+
+    /*     let peachestrackinfo = document.querySelector(".infopeaches");
+        peachestrackinfo.innerHTML += `<h3>${datos.title}</h3>`; */
+
+
     })
     .catch(function(error){ 
         console.log('Tu error es:' +error)

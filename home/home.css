@@ -42,7 +42,7 @@
      height: auto;
  }
 
- .homesongs,.homealbums,.homeartist{
+ .homesongs,.homealbums,.homeartist,.trackpeaches{
      width: 40%;
      display: flex;
      flex-direction: column;
