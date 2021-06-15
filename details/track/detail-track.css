@@ -1,15 +1,16 @@
-
+ 
 .imgsong{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content:center;
-    width: 67%;
+    width: 100%; 
    
 }
-.justinsong{
-    width: 100%;
-  margin-left: 50%;
+.justinsong,.alairesong{
+    width: 80%;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-top: 0 auto;
 }
 
@@ -51,13 +52,13 @@
     padding-top: 1%;
 }
 
-
-.justindata{
+/* 
+.dataalaire{
     display: flex;
     flex-direction: column;
-}
+} */
 
-.peaches{
+.alaire{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
