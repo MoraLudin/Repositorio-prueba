@@ -1,3 +1,8 @@
+window.addEventListener('load', function(){
+    /* const proxy = 'https://cors-anywhere.herokuapp.com/';
+    let genredetail = `${proxy}/https://api.deezer.com/genre/${idgenero}`;
+    let genredetailartist = `${proxy}/https://api.deezer.com/genre/${idgenero}/artists`; */
+
 let querystring = location.search;
 let datos = new URLSearchParams(querystring);
 let idgenero = datos.get("id");
@@ -10,7 +15,6 @@ fetch ("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/"+idgen
 
 let titulo = document.querySelector(".titulo")
 titulo.innerHTML += data.name
-
 
 });
 
@@ -37,3 +41,4 @@ for (let index = 5; index < 10; index++) {
 }
 
 });
+})

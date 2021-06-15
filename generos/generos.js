@@ -1,4 +1,8 @@
-fetch ("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre") 
+window.addEventListener('load', function(){
+    const proxy = 'https://cors-anywhere.herokuapp.com/';
+    let genre = `${proxy}https://api.deezer.com/genre`;
+
+fetch (genre) 
 .then(function(response){
     return response.json();
 })
@@ -7,7 +11,6 @@ fetch ("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre")
 let generos = data.data 
 
 let fila1 = document.querySelector(".boxgenero1");
-
 for (let index = 0; index < 4; index++) {
     console.log(generos[index].name);
     fila1.innerHTML += '<div class="buttongeneros1"> <a href="detail-genres.html?id='+generos[index].id+'"><h3> '+generos[index].name+'</h3> </div>'  
@@ -30,8 +33,6 @@ for (let index = 12; index < 16; index++) {
     fila4.innerHTML += '<div class="buttongeneros1"> <a href="detail-genres.html?id='+generos[index].id+'"><h3> '+generos[index].name+'</h3> </div>'  
 }
 
-
-
-
-
 });
+})
+/*"https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre"  */
