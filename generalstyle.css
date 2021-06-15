@@ -55,12 +55,12 @@ footer{
     padding: 2%;
 }
 
-a{
+a,.datos{
     color:white;
     text-decoration: none;
 }
 
-h2{
+h2,.datos{
     color: white;
 }
 
@@ -68,6 +68,7 @@ h2{
     color: red;
     font-size: 230%;
 }
+
 
 
 @media (max-width:420px){

@@ -6,11 +6,11 @@
      justify-content: center;
      flex-wrap: wrap;
  }
- .peaches,.devil,.morat{
+ .peaches,.devil,.morat,.alaire{
      width: 95%;
  }
 
- .homesongs,.homealbums,.homeartist,.trackpeaches{
+ .homesongs,.homealbums,.homeartist,.trackpeaches,.trackalaire{
      width: 18%;
  }
 
@@ -34,7 +34,7 @@
    
  }
    
- .peaches,.devil,.morat{
+ .peaches,.devil,.morat,.alaire{
      display: flex;
      flex-direction: column;
      flex-wrap: nowrap;
@@ -53,7 +53,7 @@
      align-items: center ;
  }
 
- a{
+ a,.datos{
      display: flex;
      flex-direction: column;
      flex-wrap: nowrap;
