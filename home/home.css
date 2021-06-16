@@ -6,11 +6,11 @@
      justify-content: center;
      flex-wrap: wrap;
  }
- .peaches,.devil,.morat,.alaire{
+ .peaches,.devil,.morat,.alaire,.veintidos{
      width: 95%;
  }
 
- .homesongs,.homealbums,.homeartist,.trackpeaches,.trackalaire{
+ .homesongs,.homealbums,.homeartist,.trackpeaches,.trackalaire,.track22{
      width: 18%;
  }
 
@@ -34,7 +34,7 @@
    
  }
    
- .peaches,.devil,.morat,.alaire{
+ .peaches,.devil,.morat,.alaire,.veintidos{
      display: flex;
      flex-direction: column;
      flex-wrap: nowrap;
@@ -42,7 +42,7 @@
      height: auto;
  }
 
- .homesongs,.homealbums,.homeartist,.trackpeaches{
+ .homesongs,.homealbums,.homeartist,.trackpeaches,.track22{
      width: 40%;
      display: flex;
      flex-direction: column;

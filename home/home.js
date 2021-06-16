@@ -26,9 +26,9 @@ window.addEventListener('load', function(){
 
 
 /* alaire track */
-let alaire = `${proxy}https://api.deezer.com/track/1133364592`;
+    let alaire = `${proxy}https://api.deezer.com/track/1133364592`;
 
-fetch(alaire)
+ fetch(alaire)
     .then(function(response){
         return response.json();
     })
@@ -46,6 +46,29 @@ fetch(alaire)
     .catch(function(error){ 
         console.log('Tu error es:' +error)
     })
+
+    /* 22 track */
+    let veintidos = `${proxy}https://api.deezer.com/track/1156603822`;
+
+    fetch(veintidos)
+       .then(function(response){
+           return response.json();
+       })
+       .then(function(datos){
+           console.log(datos);
+   
+       /* imagen y info track alaire */
+           let veintidostrackimg = document.querySelector(".track22");
+           veintidostrackimg.innerHTML += `
+           <img class="veintidos" src= "${datos.album.cover_medium}"> 
+           <h3 class="datos">${datos.title}, ${datos.artist.name}</h3>
+           `;
+       
+       })
+       .catch(function(error){ 
+           console.log('Tu error es:' +error)
+       })
+
 })
 
 
