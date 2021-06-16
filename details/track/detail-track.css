@@ -52,6 +52,7 @@
     padding-top: 1%;
 }
 
+
 /* 
 .dataalaire{
     display: flex;
@@ -133,6 +134,7 @@
 h3{
     font-size: 160%;
     margin-left: 2%;
+
 }
 @media(max-width:420px){
  .general{
@@ -164,14 +166,14 @@ h3{
     }
     .peaches{
         display: flex;
-        justify-content: space-around;
-        flex-direction: row;
+        /* justify-content: space-around; */
+        flex-direction: column;
         box-sizing: border-box;
         justify-content: center;
         flex-wrap: wrap;
         margin-right: 3%;
         color:black;
-        font-size: 150%;
+        font-size: 100%;
         margin: 2%;
         margin-bottom: 1%; 
     }
