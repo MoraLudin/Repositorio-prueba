@@ -35,11 +35,10 @@ fetch(`${proxy}https://api.deezer.com/track/${songId}`)
             e.preventDefault(); /* saca el comportamiento por defecto */
             localStorage.setItem('peachesimgplay', JSON.stringify(`${datos.album.cover_big}`));
             localStorage.setItem('peachestitleplay', JSON.stringify(`${datos.title}`));
+        })
         
-        
-    })
+     })
     .catch(function(error){ 
         console.log('Tu error es:' +error)
     })
 
-})

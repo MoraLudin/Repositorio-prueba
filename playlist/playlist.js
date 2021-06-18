@@ -15,6 +15,14 @@ window.addEventListener("load",function(){
         songs1.innerHTML+= `<img class=playimage src="${favoritos1}">
         <h3>${favoritos1info}`
         ;
+
+        let songs2= document.getElementById ("songs2")
+        let favoritos2 = JSON.parse(localStorage.getItem('peachesimgplay'));
+        let favoritos2info = JSON.parse(localStorage.getItem('peachestitleplay'));
+        songs2.innerHTML+= `<img class=playimage src="${favoritos2}">
+        <h3>${favoritos2info}`
+
+
     })
 })
     /* let songs1 = document.getElementById("songs1");
