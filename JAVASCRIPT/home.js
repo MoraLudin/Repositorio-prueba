@@ -88,6 +88,35 @@ window.addEventListener('load', function(){
 
 
 
+let idMorat = 7327640
+let morat = `${proxy}https://api.deezer.com/artist/${idMorat}`;
+
+fetch(morat)
+       .then(function(response){
+           return response.json();
+       })
+       .then(function(datos){
+           console.log(datos);
+           localStorage.setItem("locationmorat", JSON.stringify(datos));
+   
+       /* imagen y info artist morat */
+           let moratartistimg = document.querySelector(".artistmorat");
+           moratartistimg.innerHTML += `
+           <img class="morat" src= "${datos.album.cover_medium}"> 
+           <a href="../HTML/detail-artist.html?songId=${datos.id}"><h3 class="datos"> ${datos.artist.name}</h3> </a>
+           `;
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
