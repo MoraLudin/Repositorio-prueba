@@ -18,7 +18,7 @@ window.addEventListener('load', function(){
            let peachestrackimg = document.querySelector(".trackpeaches");
            peachestrackimg.innerHTML += `
            <img class="peaches" src= "${datos.album.cover_medium}"> 
-           <a href="../details/track/detail-track.html?songId=${datos.id}"><h3 class="datos">${datos.title}, ${datos.artist.name}</h3> </a>
+           <a href="../HTML/detail-track.html?songId=${datos.id}"><h3 class="datos">${datos.title}, ${datos.artist.name}</h3> </a>
            `;
        })
        .catch(function(error){ 
@@ -42,7 +42,7 @@ window.addEventListener('load', function(){
         let alairetrackimg = document.querySelector(".trackalaire");
         alairetrackimg.innerHTML += `
         <img class="alaire" src= "${datos.album.cover_medium}"> 
-        <a href="../details/track/detail-track.html?songId=${datos.id}"><h3 class="datos">${datos.title}, ${datos.artist.name}</h3> </a>
+        <a href="../HTML/detail-track.html?songId=${datos.id}"><h3 class="datos">${datos.title}, ${datos.artist.name}</h3> </a>
         `;
     
     })
@@ -66,7 +66,7 @@ window.addEventListener('load', function(){
            let veintidostrackimg = document.querySelector(".track22");
            veintidostrackimg.innerHTML += `
            <img class="veintidos" src= "${datos.album.cover_medium}"> 
-           <a href="../details/track/detail-track.html?songId=${datos.id}"><h3 class="datos">${datos.title}, ${datos.artist.name}</h3> </a>
+           <a href="../HTML/detail-track.html?songId=${datos.id}"><h3 class="datos">${datos.title}, ${datos.artist.name}</h3> </a>
            `;
        
        })
