@@ -11,7 +11,10 @@ window.addEventListener("load",function(){
 
         let songs1= document.getElementById ("songs1")
         let favoritos1 = JSON.parse(localStorage.getItem('peachesimgplay'));
-        songs1.innerHTML+= `<img class=playimage src="${favoritos1}">`;
+        let favoritos1info = JSON.parse(localStorage.getItem('peachestitleplay'));
+        songs1.innerHTML+= `<img class=playimage src="${favoritos1}">
+        <h3>${favoritos1info}`
+        ;
     })
 })
     /* let songs1 = document.getElementById("songs1");
