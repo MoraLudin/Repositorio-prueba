@@ -16,7 +16,7 @@
      margin: 1%;
    
  }
- .playlistsongs{
+ .playlistsongs,.imagen{
      width: 97%;
      background-color: rgba(203, 5, 5, 0.283);
      display: flex;
