@@ -5,9 +5,17 @@ const proxy = 'https://cors-anywhere.herokuapp.com/';
 let local = localStorage.getItem('locationpeaches')
 let objetopeaches = JSON.parse(local);
 
-
 let local1 = localStorage.getItem('locationalaire')
 let objetoalaire = JSON.parse(local1);
+
+let local2 = localStorage.getItem('location22')
+let objeto22 = JSON.parse(local2)
+
+let local3 = localStorage.getItem('locationropacara')
+let objetoropacara = JSON.parse(local3)
+
+let local4 = localStorage. getItem('locationdakiti')
+let objetodakiti = JSON.parse(local4)
 
 
 fetch(`${proxy}https://api.deezer.com/track/${songId}`)
@@ -17,13 +25,13 @@ fetch(`${proxy}https://api.deezer.com/track/${songId}`)
     .then(function(datos){
         console.log(datos);
 
-    /* imagen para detalle alaire */
+    /* imagen para detalle */
         let alairedetail = document.querySelector(".detailalaire");
         alairedetail.innerHTML += `
         <img class="alairesong" src= "${datos.album.cover_big}"> 
         `;
     
-    /* info detalle cancion alaire */
+    /* info detalle cancion  */
         let alairedata = document.querySelector(".infoalaire");
         alairedata.innerHTML += `
         <h1 class="alaire">${datos.title}</h1>
@@ -36,12 +44,12 @@ fetch(`${proxy}https://api.deezer.com/track/${songId}`)
             localStorage.setItem('peachesimgplay', JSON.stringify(`${datos.album.cover_big}`));
             localStorage.setItem('peachestitleplay', JSON.stringify(`${datos.title}`));
         })
-        let addplaylist1 = document.querySelector(".addplaylist")
+        /* let addplaylist1 = document.querySelector(".addplaylist")
         addplaylist1.addEventListener("click", function(e){
-            e.preventDefault(); /* saca el comportamiento por defecto */  
-            localStorage.setItem('alaireimgplay', JSON.stringify(`${datos.album.cover_big}`)); /* PROBLEM */
+            e.preventDefault();
+            localStorage.setItem('alaireimgplay', JSON.stringify(`${datos.album.cover_big}`)); /* PROBLEM 
             localStorage.setItem('alairetitleplay', JSON.stringify(`${datos.title}`));
-        })
+        }) */
 
      })
     .catch(function(error){ 
