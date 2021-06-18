@@ -3,30 +3,32 @@ window.addEventListener('load', function(){
     
 /* tracks */
 /* peaches track */
-    let peaches = `${proxy}https://api.deezer.com/track/1280165222`;
-   
- fetch(peaches)
-    .then(function(response){
-        return response.json();
-    })
-    .then(function(datos){
-        console.log(datos);
+    let idPeaches = '1280165222'    
+    let peaches = `${proxy}https://api.deezer.com/track/${idPeaches}`;
 
-    /* imagen y info track peaches desde api */
-        let peachestrackimg = document.querySelector(".trackpeaches");
-        peachestrackimg.innerHTML += `
-        <img class="peaches" src= "${datos.album.cover_medium}"> 
-        <h3 class="datos">${datos.title}, ${datos.artist.name}</h3> 
-        `;
-    
-    })
-    .catch(function(error){ 
-        console.log('Tu error es:' +error)
-    })
+    fetch(peaches)
+       .then(function(response){
+           return response.json();
+       })
+       .then(function(datos){
+           console.log(datos);
+           localStorage.setItem("locationpeaches", JSON.stringify(datos));
+   
+       /* imagen y info track peaches */
+           let peachestrackimg = document.querySelector(".trackpeaches");
+           peachestrackimg.innerHTML += `
+           <img class="peaches" src= "${datos.album.cover_medium}"> 
+           <a href="../details/track/detail-track.html?songId=${datos.id}"><h3 class="datos">${datos.title}, ${datos.artist.name}</h3> </a>
+           `;
+       })
+       .catch(function(error){ 
+           console.log('Tu error es:' +error)
+       })
 
 
 /* alaire track */
-    let alaire = `${proxy}https://api.deezer.com/track/1133364592`;
+    let idAlaire = '1133364592'
+    let alaire = `${proxy}https://api.deezer.com/track/${idAlaire}`;
 
  fetch(alaire)
     .then(function(response){
@@ -34,12 +36,13 @@ window.addEventListener('load', function(){
     })
     .then(function(datos){
         console.log(datos);
+        localStorage.setItem("locationalaire", JSON.stringify(datos));
 
     /* imagen y info track alaire */
         let alairetrackimg = document.querySelector(".trackalaire");
         alairetrackimg.innerHTML += `
         <img class="alaire" src= "${datos.album.cover_medium}"> 
-        <h3 class="datos">${datos.title}, ${datos.artist.name}</h3>
+        <a href="../details/track/detail-track.html?songId=${datos.id}"><h3 class="datos">${datos.title}, ${datos.artist.name}</h3> </a>
         `;
     
     })
@@ -68,7 +71,7 @@ window.addEventListener('load', function(){
        .catch(function(error){ 
            console.log('Tu error es:' +error)
        })
-
+    
 })
 
 

@@ -1,9 +1,15 @@
-
 const urlSearchParams = new URLSearchParams(window.location.search);
 const songId = urlSearchParams.get('songId')
 const proxy = 'https://cors-anywhere.herokuapp.com/';
 
-/* cancion al aire */
+let local = localStorage.getItem('locationpeaches')
+let objetopeaches = JSON.parse(local);
+console.log(objetopeaches)
+
+let local1 = localStorage.getItem('locationalaire')
+let objetoalaire = JSON.parse(local1);
+console.log(objetoalaire)
+
 fetch(`${proxy}https://api.deezer.com/track/${songId}`)
     .then(function(response){
         return response.json();
@@ -23,12 +29,15 @@ fetch(`${proxy}https://api.deezer.com/track/${songId}`)
         <h1 class="alaire">${datos.title}</h1>
         <h2 class="alaire1">${datos.artist.name}</h2>
         `; 
-        
-        /* reproductor */
-        let reproductorpeaches = document.querySelector(".reproductor");
-        reproductorpeaches.attribute ()
     
+     addplaylist.addEventListener("click", function(e){
+            e.preventDefault(); /* saca el comportamiento por defecto */
+            localStorage.setItem('peachesimgplay', JSON.stringify(`${datos.album.cover_big}`));
+            localStorage.setItem('peachestitleplay', JSON.stringify(`${datos.title}`));
+            
     })
     .catch(function(error){ 
         console.log('Tu error es:' +error)
     })
+
+})
