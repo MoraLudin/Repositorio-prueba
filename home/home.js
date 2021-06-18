@@ -51,7 +51,8 @@ window.addEventListener('load', function(){
     })
 
     /* 22 track */
-    let veintidos = `${proxy}https://api.deezer.com/track/1156603822`;
+    let idVeintidos = '1156603822'
+    let veintidos = `${proxy}https://api.deezer.com/track/${idVeintidos}`;
 
     fetch(veintidos)
        .then(function(response){
@@ -59,12 +60,13 @@ window.addEventListener('load', function(){
        })
        .then(function(datos){
            console.log(datos);
+           localStorage.setItem("location22", JSON.stringify(datos));
    
-       /* imagen y info track alaire */
+       /* imagen y info track 22 */
            let veintidostrackimg = document.querySelector(".track22");
            veintidostrackimg.innerHTML += `
            <img class="veintidos" src= "${datos.album.cover_medium}"> 
-           <h3 class="datos">${datos.title}, ${datos.artist.name}</h3>
+           <a href="../details/track/detail-track.html?songId=${datos.id}"><h3 class="datos">${datos.title}, ${datos.artist.name}</h3> </a>
            `;
        
        })
@@ -73,5 +75,23 @@ window.addEventListener('load', function(){
        })
     
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
