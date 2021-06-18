@@ -4,11 +4,11 @@ const proxy = 'https://cors-anywhere.herokuapp.com/';
 
 let local = localStorage.getItem('locationpeaches')
 let objetopeaches = JSON.parse(local);
-console.log(objetopeaches)
+
 
 let local1 = localStorage.getItem('locationalaire')
 let objetoalaire = JSON.parse(local1);
-console.log(objetoalaire)
+
 
 fetch(`${proxy}https://api.deezer.com/track/${songId}`)
     .then(function(response){
@@ -36,7 +36,13 @@ fetch(`${proxy}https://api.deezer.com/track/${songId}`)
             localStorage.setItem('peachesimgplay', JSON.stringify(`${datos.album.cover_big}`));
             localStorage.setItem('peachestitleplay', JSON.stringify(`${datos.title}`));
         })
-        
+        let addplaylist1 = document.querySelector(".addplaylist")
+        addplaylist1.addEventListener("click", function(e){
+            e.preventDefault(); /* saca el comportamiento por defecto */  
+            localStorage.setItem('alaireimgplay', JSON.stringify(`${datos.album.cover_big}`)); /* PROBLEM */
+            localStorage.setItem('alairetitleplay', JSON.stringify(`${datos.title}`));
+        })
+
      })
     .catch(function(error){ 
         console.log('Tu error es:' +error)

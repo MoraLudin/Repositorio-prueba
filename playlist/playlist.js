@@ -13,14 +13,14 @@ window.addEventListener("load",function(){
         let favoritos1 = JSON.parse(localStorage.getItem('peachesimgplay'));
         let favoritos1info = JSON.parse(localStorage.getItem('peachestitleplay'));
         songs1.innerHTML+= `<img class=playimage src="${favoritos1}">
-        <h3>${favoritos1info}`
+        <h3>${favoritos1info}</h3>`
         ;
 
         let songs2= document.getElementById ("songs2")
-        let favoritos2 = JSON.parse(localStorage.getItem('peachesimgplay'));
-        let favoritos2info = JSON.parse(localStorage.getItem('peachestitleplay'));
+        let favoritos2 = JSON.parse(localStorage.getItem('alaireimgplay'));
+        let favoritos2info = JSON.parse(localStorage.getItem('alairetitleplay'));
         songs2.innerHTML+= `<img class=playimage src="${favoritos2}">
-        <h3>${favoritos2info}`
+        <h3>${favoritos2info}</h3>`
 
 
     })
