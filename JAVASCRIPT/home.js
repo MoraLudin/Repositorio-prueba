@@ -148,6 +148,7 @@ fetch(morat)
            <img class="morat" src= "${datos.album.cover_medium}"> 
            <a href="../HTML/detail-artist.html?songId=${datos.id}"><h3 class="datos"> ${datos.artist.name}</h3> </a>
            `;
+       })
 
 
 
