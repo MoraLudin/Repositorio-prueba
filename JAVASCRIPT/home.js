@@ -68,13 +68,56 @@ window.addEventListener('load', function(){
            <img class="veintidos" src= "${datos.album.cover_medium}"> 
            <a href="../HTML/detail-track.html?songId=${datos.id}"><h3 class="datos">${datos.title}, ${datos.artist.name}</h3> </a>
            `;
-       
        })
        .catch(function(error){ 
            console.log('Tu error es:' +error)
        })
-    
-    
+
+    /* ropacara track */
+    let idRopacara = '1260566352'
+    let ropacara = `${proxy}https://api.deezer.com/track/${idRopacara}`;
+
+    fetch(ropacara)
+       .then(function(response){
+           return response.json();
+       })
+       .then(function(datos){
+           console.log(datos);
+           localStorage.setItem("locationropacara", JSON.stringify(datos));
+   
+       /* imagen y info track ropacara */
+           let ropacaratrackimg = document.querySelector(".trackropacara");
+           ropacaratrackimg.innerHTML += `
+           <img class="ropacara" src= "${datos.album.cover_medium}"> 
+           <a href="../HTML/detail-track.html?songId=${datos.id}"><h3 class="datos">${datos.title}, ${datos.artist.name}</h3> </a>
+           `;
+       })
+       .catch(function(error){ 
+           console.log('Tu error es:' +error)
+       })
+
+    /* dakiti track */
+    let idDakiti = '1155477862'
+    let dakiti = `${proxy}https://api.deezer.com/track/${idDakiti}`;
+
+    fetch(dakiti)
+       .then(function(response){
+           return response.json();
+       })
+       .then(function(datos){
+           console.log(datos);
+           localStorage.setItem("locationdakiti", JSON.stringify(datos));
+   
+       /* imagen y info track dakiti */
+           let dakititrackimg = document.querySelector(".trackdakiti");
+           dakititrackimg.innerHTML += `
+           <img class="dakiti" src= "${datos.album.cover_medium}"> 
+           <a href="../HTML/detail-track.html?songId=${datos.id}"><h3 class="datos">${datos.title}, ${datos.artist.name}</h3> </a>
+           `;
+       })
+       .catch(function(error){ 
+           console.log('Tu error es:' +error)
+       })
 })
 
 

@@ -1,7 +1,7 @@
 window.addEventListener("load",function(){
     const proxy= `https://cors-anywhere.herokuapp.com/`;
     let api= `${proxy}https://api.deezer.com/track/`;
-
+    
     fetch(api)
     .then(function(response){
         return response.json();
@@ -17,10 +17,16 @@ window.addEventListener("load",function(){
         ;
 
         let songs2= document.getElementById ("songs2")
-        let favoritos2 = JSON.parse(localStorage.getItem('alaireimgplay'));
-        let favoritos2info = JSON.parse(localStorage.getItem('alairetitleplay'));
+        let favoritos2 = JSON.parse(localStorage.getItem('peachesimgplay'));
+        let favoritos2info = JSON.parse(localStorage.getItem('peachestitleplay'));
         songs2.innerHTML+= `<img class=playimage src="${favoritos2}">
         <h3>${favoritos2info}</h3>`
+
+        let songs3= document.getElementById ("songs3")
+        let favoritos3 = JSON.parse(localStorage.getItem('peachesimgplay'));
+        let favoritos3info = JSON.parse(localStorage.getItem('peachestitleplay'));
+        songs3.innerHTML+= `<img class=playimage src="${favoritos3}">
+        <h3>${favoritos3info}</h3>`
 
 
     })
