@@ -18,21 +18,22 @@ h1{
     width: 100%;
 } 
 
-.buttongeneros1,.buttongeneros2,.buttongeneros3,.buttongeneros4{
+.buttongeneros1{
     width: 25%;
     height: 30%;
     margin: 1%;
     padding: 1%; 
     text-align: center;
     font-size: 110%;
+    background-color: lightcoral;
 }
 
 .buttongeneros1{
-    background-image: url(../generos/imggeneros/fondo1.jpeg);
+    background-color:lightcoral
 }
 
 .buttongeneros2{
-    background-image: url(../generos/imggeneros/fondo2.jpeg);
+    background-color:blue;
     
 }
 

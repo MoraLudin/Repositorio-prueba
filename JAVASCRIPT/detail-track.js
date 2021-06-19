@@ -2,7 +2,7 @@ const urlSearchParams = new URLSearchParams(window.location.search);
 const songId = urlSearchParams.get('songId')
 const proxy = 'https://cors-anywhere.herokuapp.com/';
 
-let local = localStorage.getItem('locationpeaches')
+/* let local = localStorage.getItem('locationpeaches')
 let objetopeaches = JSON.parse(local);
 
 let local1 = localStorage.getItem('locationalaire')
@@ -15,7 +15,7 @@ let local3 = localStorage.getItem('locationropacara')
 let objetoropacara = JSON.parse(local3)
 
 let local4 = localStorage. getItem('locationdakiti')
-let objetodakiti = JSON.parse(local4)
+let objetodakiti = JSON.parse(local4) */
 
 
 fetch(`${proxy}https://api.deezer.com/track/${songId}`)

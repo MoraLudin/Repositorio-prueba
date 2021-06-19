@@ -87,7 +87,7 @@
 
 }
 
-.peaches2{
+.peaches2,.alaire1{
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -164,7 +164,7 @@ h3{
         margin-bottom: 3%;
         font-size: 80%;
     }
-    .peaches{
+    .peaches,.alaire{
         display: flex;
         /* justify-content: space-around; */
         flex-direction: column;

@@ -6,7 +6,7 @@
     justify-content: center;
     color: white;
     font-size: 140%;
-    margin-top: 2%;
+    margin-top: 1%;
 }
 
 .wikipedia{
@@ -76,6 +76,25 @@
      width: 13%;
  
  }
+ 
+.top5,.top5b,.top5c,.top5d,.top5e{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+    width: 100%;
+} 
+
+.divtop5,.divtop5b,.divtop5c,.divtop5d,.divtop5e{
+    width: 25%;
+    height: 30%;
+    margin: 1%;
+    padding: 1%; 
+    text-align: center;
+    font-size: 110%;
+    background-color: grey;
+}
 
  @media(max-width:420px){
     .morat5{
