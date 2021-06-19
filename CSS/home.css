@@ -6,11 +6,11 @@
      justify-content: center;
      flex-wrap: wrap;
  }
- .peaches,.devil,.morat,.alaire,.veintidos,.ropacara,.dakiti,.morat,.miley,.camilo,.justin,.badbunny{
+ .peaches,.devil,.morat,.alaire,.veintidos,.ropacara,.dakiti,.morat,.miley,.camilo,.justin,.badbunny,.devil,.balas,.tini,.manos,.colores{
      width: 95%;
  }
 
- .homesongs,.homealbums,.homeartist,.trackpeaches,.trackalaire,.track22,.trackropacara,.trackdakiti,.artistmorat,.artistmiley,.artistcamilo,.artistjustin,.artistbadbunny{
+ .trackpeaches,.trackalaire,.track22,.trackropacara,.trackdakiti,.artistmorat,.artistmiley,.artistcamilo,.artistjustin,.artistbadbunny,.albumdevil,.albumbalas,.albumtini,.albummanos,.albumcolores{
      width: 18%;
  }
 
@@ -34,7 +34,7 @@
    
  }
    
- .peaches,.devil,.morat,.alaire,.veintidos,.ropacara,.dakiti{
+ .peaches,.devil,.morat,.alaire,.veintidos,.ropacara,.dakiti,.morat,.miley,.camilo,.justin,.badbunny,.devil,.balas,.tini,.manos,.colores{
      display: flex;
      flex-direction: column;
      flex-wrap: nowrap;
@@ -42,7 +42,7 @@
      height: auto;
  }
 
- .homesongs,.homealbums,.homeartist,.trackpeaches,.track22,.trackropacara,.trackdakiti{
+ .homesongs,.homealbums,.homeartist,.trackpeaches,.track22,.trackropacara,.trackdakiti,.artistmorat,.artistmiley,.artistcamilo,.artistjustin,.artistbadbunny,.albumdevil,.albumbalas,.albumtini,.algummanos,.albumcolores{
      width: 40%;
      display: flex;
      flex-direction: column;

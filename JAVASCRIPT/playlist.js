@@ -13,7 +13,7 @@ window.addEventListener("load",function(){
         let favoritos1 = JSON.parse(localStorage.getItem('peachesimgplay'));
         let favoritos1info = JSON.parse(localStorage.getItem('peachestitleplay'));
         songs1.innerHTML+= `<img class=playimage src="${favoritos1}">
-        <h3>${favoritos1info}</h3>`
+        <h3>${favoritos1info}</h3>` 
         ;
 
         let songs2= document.getElementById ("songs2")

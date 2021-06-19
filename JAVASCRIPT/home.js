@@ -51,7 +51,7 @@ window.addEventListener('load', function(){
     })
 
     /* 22 track */
-    let idVeintidos = '1156603822'
+    let idVeintidos = '529139121'
     let veintidos = `${proxy}https://api.deezer.com/track/${idVeintidos}`;
 
     fetch(veintidos)
@@ -117,39 +117,248 @@ window.addEventListener('load', function(){
        })
        .catch(function(error){ 
            console.log('Tu error es:' +error)
-       })
-})
+        })
+
+    /* albums */
+    /* devil album */
+    let idDevil = '217802232'
+    let devil = `${proxy}https://api.deezer.com/album/${idDevil}`;
+    
+        fetch(devil)
+           .then(function(response){
+               return response.json();
+           })
+           .then(function(datos){
+               console.log(datos);
+               localStorage.setItem("locationdevil", JSON.stringify(datos));
+       
+           /* imagen y info album devil */
+               let devilalbumimg = document.querySelector(".albumdevil");
+               devilalbumimg.innerHTML += `
+               <img class="devil" src= "${datos.cover_big}"> 
+                <a href="../HTML/detail-album.html?albumId=${datos.id}"><h3 class="datos">${datos.title}</h3> </a> 
+               `;
+           })
+            .catch(function(error){ 
+            console.log('Tu error es:' +error)
+            })
+    
+    /* balas album */
+    let idBalas = '76251542'
+    let balas = `${proxy}https://api.deezer.com/album/${idBalas}`;
+    
+        fetch(balas)
+           .then(function(response){
+               return response.json();
+           })
+           .then(function(datos){
+               console.log(datos);
+               localStorage.setItem("locationbalas", JSON.stringify(datos));
+       
+           /* imagen y info album balas */
+               let balasalbumimg = document.querySelector(".albumbalas");
+               balasalbumimg.innerHTML += `
+               <img class="balas" src= "${datos.cover_big}"> 
+                <a href="../HTML/detail-album.html?albumId=${datos.id}"><h3 class="datos">${datos.title}</h3> </a> 
+               `;
+           })
+            .catch(function(error){ 
+            console.log('Tu error es:' +error)
+            })
+
+    /* tini album */
+    let idTini = '189188362'
+    let tini = `${proxy}https://api.deezer.com/album/${idTini}`;
+    
+        fetch(tini)
+           .then(function(response){
+               return response.json();
+           })
+           .then(function(datos){
+               console.log(datos);
+               localStorage.setItem("locationtini", JSON.stringify(datos));
+       
+           /* imagen y info album tini */
+               let tinialbumimg = document.querySelector(".albumtini");
+               tinialbumimg.innerHTML += `
+               <img class="tini" src= "${datos.cover_big}"> 
+                <a href="../HTML/detail-album.html?albumId=${datos.id}"><h3 class="datos">${datos.title}</h3> </a> 
+               `;
+           })
+            .catch(function(error){ 
+            console.log('Tu error es:' +error)
+            })
+    
+    /* manos album */
+    let idManos = '156399462'
+    let manos = `${proxy}https://api.deezer.com/album/${idManos}`;
+    
+        fetch(manos)
+           .then(function(response){
+               return response.json();
+           })
+           .then(function(datos){
+               console.log(datos);
+               localStorage.setItem("locationmanos", JSON.stringify(datos));
+       
+           /* imagen y info album manos */
+               let manosalbumimg = document.querySelector(".albummanos");
+               manosalbumimg.innerHTML += `
+               <img class="manos" src= "${datos.cover_big}"> 
+                <a href="../HTML/detail-album.html?albumId=${datos.id}"><h3 class="datos">${datos.title}</h3> </a> 
+               `;
+           })
+            .catch(function(error){ 
+            console.log('Tu error es:' +error)
+            })
+
+    /* colores album */
+    let idColores = '136387572'
+    let colores = `${proxy}https://api.deezer.com/album/${idColores}`;
+    
+        fetch(colores)
+           .then(function(response){
+               return response.json();
+           })
+           .then(function(datos){
+               console.log(datos);
+               localStorage.setItem("locationcolores", JSON.stringify(datos));
+       
+           /* imagen y info album colores */
+               let coloresalbumimg = document.querySelector(".albumcolores");
+               coloresalbumimg.innerHTML += `
+               <img class="colores" src= "${datos.cover_big}"> 
+                <a href="../HTML/detail-album.html?albumId=${datos.id}"><h3 class="datos">${datos.title}</h3> </a> 
+               `;
+           })
+            .catch(function(error){ 
+            console.log('Tu error es:' +error)
+            })
+
+    /* artistas */
+    /* morat artist */
+    let idMorat = '7327640'
+    let morat = `${proxy}https://api.deezer.com/artist/${idMorat}`;
+    
+        fetch(morat)
+           .then(function(response){
+               return response.json();
+           })
+           .then(function(datos){
+               console.log(datos);
+               localStorage.setItem("locationmorat", JSON.stringify(datos));
+       
+           /* imagen y info artist morat */
+               let moratartistimg = document.querySelector(".artistmorat");
+               moratartistimg.innerHTML += `
+               <img class="morat" src= "${datos.picture_big}"> 
+                <a href="../HTML/detail-artist.html?artistId=${datos.id}"><h3 class="datos">${datos.name}</h3> </a> 
+               `;
+           })
+            .catch(function(error){ 
+            console.log('Tu error es:' +error)
+            })
+        
+     /* miley artist */
+    let idMiley = '12436'
+    let miley = `${proxy}https://api.deezer.com/artist/${idMiley}`;
+        
+            fetch(miley)
+               .then(function(response){
+                   return response.json();
+               })
+               .then(function(datos){
+                   console.log(datos);
+                   localStorage.setItem("locationmiley", JSON.stringify(datos));
+           
+               /* imagen y info artist miley */
+                   let mileyartistimg = document.querySelector(".artistmiley");
+                   mileyartistimg.innerHTML += `
+                   <img class="miley" src= "${datos.picture_big}"> 
+                    <a href="../HTML/detail-artist.html?artistId=${datos.id}"><h3 class="datos">${datos.name}</h3> </a> 
+                   `;
+               })
+                .catch(function(error){ 
+                console.log('Tu error es:' +error)
+                })
+
+    /* camilo artist */
+   let idCamilo = '58568762'
+   let camilo = `${proxy}https://api.deezer.com/artist/${idCamilo}`;
+      
+           fetch(camilo)
+              .then(function(response){
+                  return response.json();
+              })
+              .then(function(datos){
+                  console.log(datos);
+                  localStorage.setItem("locationcamilo", JSON.stringify(datos));
+         
+              /* imagen y info artist camilo */
+                  let camiloartistimg = document.querySelector(".artistcamilo");
+                  camiloartistimg.innerHTML += `
+                  <img class="camilo" src= "${datos.picture_big}">
+                   <a href="../HTML/detail-artist.html?artistId=${datos.id}"><h3 class="datos">${datos.name}</h3> </a>
+                  `;
+              })
+               .catch(function(error){
+               console.log('Tu error es:' +error)
+               })
+
+    /* justin artist */
+   let idJustin = '288166'
+   let justin = `${proxy}https://api.deezer.com/artist/${idJustin}`;
+      
+           fetch(justin)
+              .then(function(response){
+                  return response.json();
+              })
+              .then(function(datos){
+                  console.log(datos);
+                  localStorage.setItem("locationjustin", JSON.stringify(datos));
+         
+              /* imagen y info artist justin */
+                  let justinartistimg = document.querySelector(".artistjustin");
+                  justinartistimg.innerHTML += `
+                  <img class="justin" src= "${datos.picture_big}">
+                   <a href="../HTML/detail-artist.html?artistId=${datos.id}"><h3 class="datos">${datos.name}</h3> </a>
+                  `;
+              })
+               .catch(function(error){
+               console.log('Tu error es:' +error)
+               })
+
+    /* badbunny artist */
+   let idBadbunny = '10583405'
+   let badbunny = `${proxy}https://api.deezer.com/artist/${idBadbunny}`;
+      
+           fetch(badbunny)
+              .then(function(response){
+                  return response.json();
+              })
+              .then(function(datos){
+                  console.log(datos);
+                  localStorage.setItem("locationbadbunny", JSON.stringify(datos));
+         
+              /* imagen y info artist badbunny */
+                  let badbunnyartistimg = document.querySelector(".artistbadbunny");
+                  badbunnyartistimg.innerHTML += `
+                  <img class="badbunny" src= "${datos.picture_big}">
+                   <a href="../HTML/detail-artist.html?artistId=${datos.id}"><h3 class="datos">${datos.name}</h3> </a>
+                  `;
+              })
+               .catch(function(error){
+               console.log('Tu error es:' +error)
+               })
+
+        })
+{
 
 
+     
+    
 
-
-
-
-
-
-
-
-
-
-let idMorat = 7327640
-let morat = `${proxy}https://api.deezer.com/artist/${idMorat}`;
-
-fetch(morat)
-       .then(function(response){
-           return response.json();
-       })
-       .then(function(datos){
-           console.log(datos);
-           localStorage.setItem("locationmorat", JSON.stringify(datos));
-   
-       /* imagen y info artist morat */
-           let moratartistimg = document.querySelector(".artistmorat");
-           moratartistimg.innerHTML += `
-           <img class="morat" src= "${datos.album.cover_medium}"> 
-           <a href="../HTML/detail-artist.html?songId=${datos.id}"><h3 class="datos"> ${datos.artist.name}</h3> </a>
-           `;
-       })
-
+     /* <a href="../HTML/detail-artist.html?artistId=${datos.id}"><h3 class="datos"> ${datos.name}</h3> </a> */}
 
 
 
