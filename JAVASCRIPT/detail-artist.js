@@ -81,27 +81,27 @@ window.addEventListener('load', function(){
 
         let topsong1 = document.querySelector('.top5')
         topsong1.innerHTML += `
-        <div class="divtop5"><h3>${datos.data[0].title}</h3></div> 
+        <div class="divtop5"><a href="../HTML/detail-track.html?songId=${datos.data[0].id}"><h3>${datos.data[0].title}</h3></a></div>
         `;
 
         let topsong2 = document.querySelector('.top5b')
         topsong2.innerHTML += `
-        <div class="divtop5b"><h3>${datos.data[1].title}</h3></div> 
+        <div class="divtop5b"><a href="../HTML/detail-track.html?songId=${datos.data[1].id}"><h3>${datos.data[1].title}</h3></a></div> 
         `;
 
         let topsong3 = document.querySelector('.top5c')
         topsong3.innerHTML += `
-        <div class="divtop5c"><h3>${datos.data[2].title}</h3></div> 
+        <div class="divtop5c"><a href="../HTML/detail-track.html?songId=${datos.data[2].id}"><h3>${datos.data[2].title}</h3></a></div> 
         `;
 
         let topsong4 = document.querySelector('.top5d')
         topsong4.innerHTML += `
-        <div class="divtop5d"><h3>${datos.data[3].title}</h3></div> 
+        <div class="divtop5d"><a href="../HTML/detail-track.html?songId=${datos.data[3].id}"><h3>${datos.data[3].title}</h3></a></div> 
         `;
 
         let topsong5 = document.querySelector('.top5e')
         topsong5.innerHTML += `
-        <div class="divtop5e"><h3>${datos.data[4].title}</h3></div> 
+        <div class="divtop5e"><a href="../HTML/detail-track.html?songId=${datos.data[4].id}"><h3>${datos.data[4].title}</h3></a></div> 
         `;
        
 

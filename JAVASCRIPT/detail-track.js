@@ -34,9 +34,17 @@ fetch(`${proxy}https://api.deezer.com/track/${songId}`)
     /* info detalle cancion  DE LA CANCION QUE HAYAS PRESIONADO EN EL HOME*/
         let alairedata = document.querySelector(".infoalaire");
         alairedata.innerHTML += `
-        <h1 class="alaire">${datos.title}</h1>
-        <h2 class="alaire1">${datos.artist.name}</h2>
+       
+        <h2 class="alaire">Titulo: ${datos.title}</h2> 
+        <a href="../HTML/detail-artist.html?artistId=${datos.artist.id}"><h2 class="alaire1">Artista: ${datos.artist.name}</h2></a>
+        <h2 class="alaire2">Album: ${datos.album.title}</h2>
         `; 
+
+        let alairerep = document.querySelector(".player");
+        alairerep.innerHTML += `
+        <iframe class="reproductor" title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${songId}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+        `; 
+        
     
         let addplaylist = document.querySelector(".addplaylist")
         addplaylist.addEventListener("click", function(e){
@@ -44,6 +52,7 @@ fetch(`${proxy}https://api.deezer.com/track/${songId}`)
             localStorage.setItem('peachesimgplay', JSON.stringify(`${datos.album.cover_big}`));
             localStorage.setItem('peachestitleplay', JSON.stringify(`${datos.title}`));
         })
+        
         /* let addplaylist1 = document.querySelector(".addplaylist")
         addplaylist1.addEventListener("click", function(e){
             e.preventDefault();

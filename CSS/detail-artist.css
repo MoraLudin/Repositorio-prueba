@@ -9,7 +9,7 @@
     margin-top: 1%;
 }
 
-.wikipedia{
+/* .wikipedia{
     display: flex;
     box-sizing: border-box;
     flex-wrap: nowrap;
@@ -22,7 +22,7 @@
     margin-top: 2%;
     margin-bottom: 5%;
     font-style: italic;
-}
+} */
 
 .top5canciones{
     display: flex;
@@ -46,12 +46,13 @@
     width: 100%;
     height: 100%; 
   margin-left: 50%;
+  margin-top: 5%;
 }
 
 .top{
     display: flex;
      justify-content: space-between;
-     flex-direction: row;
+    flex-direction: row;
      box-sizing: border-box;
      justify-content: center;
      flex-wrap: nowrap;
@@ -93,7 +94,7 @@
     padding: 1%; 
     text-align: center;
     font-size: 110%;
-    background-color: grey;
+    background-color: rgba(143, 9, 9, 0.495);
 }
 
  @media(max-width:420px){
