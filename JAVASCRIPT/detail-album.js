@@ -21,7 +21,7 @@ fetch(`${proxy}https://api.deezer.com/album/${albumId}`)
         <img class="demialbum" src="${datos.cover_big}">
         `;
     
-        let albuminfo = document.queryselector ('.hola')/* NO ANDA */
+        let albuminfo = document.queryselector ('.dancingsongs')/* NO ANDA */
         albuminfo.innerHTML += `
         <a class="deminame" href="../HTML/detail-artist.html?artistId=${datos.artist.id}"><h3>${datos.artist.name}</h3></a>
         <a class="deminame" href="../../generos/genres.html"><h3>Género: Pop</h3></a>

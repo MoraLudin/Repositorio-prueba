@@ -1,6 +1,6 @@
 
  
- .miplaylist,.miplaylist1{
+ .miplaylist,.miplaylist1,.prueba{
     display: flex;
     justify-content: space-between;
     flex-direction: row;

@@ -12,7 +12,7 @@ window.addEventListener('load', function(){
        })
        .then(function(datos){
            console.log(datos);
-           localStorage.setItem("locationpeaches", JSON.stringify(datos));
+           /* localStorage.setItem("locationpeaches", JSON.stringify(datos)); */
    
        /* imagen y info track peaches */
            let peachestrackimg = document.querySelector(".trackpeaches");
@@ -36,7 +36,7 @@ window.addEventListener('load', function(){
     })
     .then(function(datos){
         console.log(datos);
-        localStorage.setItem("locationalaire", JSON.stringify(datos));
+        /* localStorage.setItem("locationalaire", JSON.stringify(datos)); */
 
     /* imagen y info track alaire */
         let alairetrackimg = document.querySelector(".trackalaire");
@@ -60,7 +60,7 @@ window.addEventListener('load', function(){
        })
        .then(function(datos){
            console.log(datos);
-           localStorage.setItem("location22", JSON.stringify(datos));
+           /* localStorage.setItem("location22", JSON.stringify(datos)); */
    
        /* imagen y info track 22 */
            let veintidostrackimg = document.querySelector(".track22");
@@ -83,7 +83,7 @@ window.addEventListener('load', function(){
        })
        .then(function(datos){
            console.log(datos);
-           localStorage.setItem("locationropacara", JSON.stringify(datos));
+           /* localStorage.setItem("locationropacara", JSON.stringify(datos)); */
    
        /* imagen y info track ropacara */
            let ropacaratrackimg = document.querySelector(".trackropacara");
@@ -106,7 +106,7 @@ window.addEventListener('load', function(){
        })
        .then(function(datos){
            console.log(datos);
-           localStorage.setItem("locationdakiti", JSON.stringify(datos));
+           /* localStorage.setItem("locationdakiti", JSON.stringify(datos)); */
    
        /* imagen y info track dakiti */
            let dakititrackimg = document.querySelector(".trackdakiti");
@@ -130,7 +130,7 @@ window.addEventListener('load', function(){
            })
            .then(function(datos){
                console.log(datos);
-               localStorage.setItem("locationdevil", JSON.stringify(datos));
+               /* localStorage.setItem("locationdevil", JSON.stringify(datos)); */
        
            /* imagen y info album devil */
                let devilalbumimg = document.querySelector(".albumdevil");
@@ -153,7 +153,7 @@ window.addEventListener('load', function(){
            })
            .then(function(datos){
                console.log(datos);
-               localStorage.setItem("locationbalas", JSON.stringify(datos));
+               /* localStorage.setItem("locationbalas", JSON.stringify(datos)); */
        
            /* imagen y info album balas */
                let balasalbumimg = document.querySelector(".albumbalas");
@@ -176,7 +176,7 @@ window.addEventListener('load', function(){
            })
            .then(function(datos){
                console.log(datos);
-               localStorage.setItem("locationtini", JSON.stringify(datos));
+               /* localStorage.setItem("locationtini", JSON.stringify(datos)); */
        
            /* imagen y info album tini */
                let tinialbumimg = document.querySelector(".albumtini");
@@ -199,7 +199,7 @@ window.addEventListener('load', function(){
            })
            .then(function(datos){
                console.log(datos);
-               localStorage.setItem("locationmanos", JSON.stringify(datos));
+               /* localStorage.setItem("locationmanos", JSON.stringify(datos)); */
        
            /* imagen y info album manos */
                let manosalbumimg = document.querySelector(".albummanos");
@@ -222,7 +222,7 @@ window.addEventListener('load', function(){
            })
            .then(function(datos){
                console.log(datos);
-               localStorage.setItem("locationcolores", JSON.stringify(datos));
+               /* localStorage.setItem("locationcolores", JSON.stringify(datos)); */
        
            /* imagen y info album colores */
                let coloresalbumimg = document.querySelector(".albumcolores");
@@ -246,7 +246,7 @@ window.addEventListener('load', function(){
            })
            .then(function(datos){
                console.log(datos);
-               localStorage.setItem("locationmorat", JSON.stringify(datos));
+               /* localStorage.setItem("locationmorat", JSON.stringify(datos)); */
        
            /* imagen y info artist morat */
                let moratartistimg = document.querySelector(".artistmorat");
@@ -269,7 +269,7 @@ window.addEventListener('load', function(){
                })
                .then(function(datos){
                    console.log(datos);
-                   localStorage.setItem("locationmiley", JSON.stringify(datos));
+                   /* localStorage.setItem("locationmiley", JSON.stringify(datos)); */
            
                /* imagen y info artist miley */
                    let mileyartistimg = document.querySelector(".artistmiley");
@@ -292,7 +292,7 @@ window.addEventListener('load', function(){
               })
               .then(function(datos){
                   console.log(datos);
-                  localStorage.setItem("locationcamilo", JSON.stringify(datos));
+                  /* localStorage.setItem("locationcamilo", JSON.stringify(datos)); */
          
               /* imagen y info artist camilo */
                   let camiloartistimg = document.querySelector(".artistcamilo");
@@ -315,7 +315,7 @@ window.addEventListener('load', function(){
               })
               .then(function(datos){
                   console.log(datos);
-                  localStorage.setItem("locationjustin", JSON.stringify(datos));
+                  /* localStorage.setItem("locationjustin", JSON.stringify(datos)); */
          
               /* imagen y info artist justin */
                   let justinartistimg = document.querySelector(".artistjustin");
@@ -338,7 +338,7 @@ window.addEventListener('load', function(){
               })
               .then(function(datos){
                   console.log(datos);
-                  localStorage.setItem("locationbadbunny", JSON.stringify(datos));
+                  /* localStorage.setItem("locationbadbunny", JSON.stringify(datos)); */
          
               /* imagen y info artist badbunny */
                   let badbunnyartistimg = document.querySelector(".artistbadbunny");

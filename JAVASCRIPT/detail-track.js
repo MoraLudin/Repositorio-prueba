@@ -24,12 +24,60 @@ fetch(`${proxy}https://api.deezer.com/track/${songId}`)
     })
     .then(function(datos){
         console.log(datos);
+        console.log(`${datos.album.cover_big}`);
+        console.log(`${datos.title}`);
+        console.log(`${datos.artist.id}`)
+        console.log(`${datos.album.title}`)
+
+        let addplaylist = document.querySelector(".addplaylist")
+        addplaylist.addEventListener("click", function(e){
+        e.preventDefault(); 
+
+        let playlist = []
+
+        if (localStorage.getItem('playlist') === null) {
+                localStorage.setItem(songId, JSON.stringify(infoTrack));
+                playlist.push(songId); 
+                localStorage.setItem('playlist', JSON.stringify(playlist));
+            
+        }else {
+                localStorage.setItem(songId, JSON.stringify(infoTrack));
+                let playlist = JSON.parse(localStorage.getItem('playlist'));
+                /* playlist.push(JSON.parse(playlistString));  */
+                console.log(playlist);
+                /* console.log(playlist)
+                console.log(typeof(playlist)) */
+                playlist.push(songId);
+               localStorage.setItem('playlist', JSON.stringify(playlist));
+
+        }
+        })
+    
+       /*  let trackGuardado = JSON.parse(localStorage.getItem('playlist'));
+        console.log(trackGuardado) */
+
+       /* if (typeof(localStorage.getItem('playlist')) != 'null') {
+        playlist = JSON.parse(localStorage.getItem('playlist'));
+        }
+        console.log(playlist)
+ */
+       /*  if (typeof(localStorage.getItem('playlist')) == 'null') {
+            playlist = [];
+        } else{
+            playlist = JSON.parse (localStorage.getItem('playlist'));
+        }
+ */
+        let infoTrack = [
+            `${datos.album.cover_big}`,
+            `${datos.title}`
+        ]
 
     /* imagen para detalle DE LA CANCION QUE HAYAS PRESIONADO EN EL HOME */
         let alairedetail = document.querySelector(".detailalaire");
         alairedetail.innerHTML += `
         <img class="alairesong" src= "${datos.album.cover_big}"> 
         `;
+       
     
     /* info detalle cancion  DE LA CANCION QUE HAYAS PRESIONADO EN EL HOME*/
         let alairedata = document.querySelector(".infoalaire");
@@ -46,12 +94,18 @@ fetch(`${proxy}https://api.deezer.com/track/${songId}`)
         `; 
         
     
-        let addplaylist = document.querySelector(".addplaylist")
+       /*  let addplaylist = document.querySelector(".addplaylist")
         addplaylist.addEventListener("click", function(e){
-            e.preventDefault(); /* saca el comportamiento por defecto */
-            localStorage.setItem('peachesimgplay', JSON.stringify(`${datos.album.cover_big}`));
-            localStorage.setItem('peachestitleplay', JSON.stringify(`${datos.title}`));
-        })
+            e.preventDefault(); 
+            localStorage.setItem(`${songId}`, JSON.stringify(`${infoTrack}`));
+            console.log(playlist)
+            playlist.push(songId)
+            console.log(playlist)
+            localStorage.setItem('playlist', JSON.stringify(`${playlist}`));
+        })  */
+
+        
+
         
         /* let addplaylist1 = document.querySelector(".addplaylist")
         addplaylist1.addEventListener("click", function(e){
@@ -59,7 +113,7 @@ fetch(`${proxy}https://api.deezer.com/track/${songId}`)
             localStorage.setItem('alaireimgplay', JSON.stringify(`${datos.album.cover_big}`)); /* PROBLEM 
             localStorage.setItem('alairetitleplay', JSON.stringify(`${datos.title}`));
         }) */
-
+      
      })
     .catch(function(error){ 
         console.log('Tu error es:' +error)
