@@ -69,17 +69,19 @@ fetch(`${proxy}https://api.deezer.com/track/${songId}`)
  */
         let infoTrack = [
             `${datos.album.cover_big}`,
-            `${datos.title}`
+            `${datos.title}`,
+            `${datos.id}`,
+            `${datos.preview}`
         ]
 
-    /* imagen para detalle DE LA CANCION QUE HAYAS PRESIONADO EN EL HOME */
+    /* imagen para detalle DE LA CANCION QUE HAYAS PRESIONADO*/
         let alairedetail = document.querySelector(".detailalaire");
         alairedetail.innerHTML += `
         <img class="alairesong" src= "${datos.album.cover_big}"> 
         `;
        
     
-    /* info detalle cancion  DE LA CANCION QUE HAYAS PRESIONADO EN EL HOME*/
+    /* info detalle cancion  DE LA CANCION QUE HAYAS PRESIONADO*/
         let alairedata = document.querySelector(".infoalaire");
         alairedata.innerHTML += `
        
