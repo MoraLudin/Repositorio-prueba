@@ -12,7 +12,6 @@ console.log(favoritos)
 let infoArtistas = [];
 let infoArtista = [];
 
-
 for (let index = 0; index < favoritos.length; index++) {
     console.log(localStorage.getItem(favoritos[index]));
     infoArtistaString = localStorage.getItem(favoritos[index]);
