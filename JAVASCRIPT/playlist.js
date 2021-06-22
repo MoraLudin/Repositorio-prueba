@@ -14,10 +14,10 @@ if (favoritos) {
     for (let index = 0; index < favoritos.length; index++) {
         infoArtista = favoritos[index];
         probando.innerHTML += `
-            <div id=${infoArtista.id}>
+            <div class="canc1" id=${infoArtista.id}>
                 <img class="playimage" src="${infoArtista.cover_big}">
                 <a href="../HTML/detail-track.html?songId=${infoArtista.id}"><h3 class="titulo" >${infoArtista.title}</h3></a>
-                <button type="submit" id="sacar" onclick='sacar(${infoArtista.id})'> Quitar de Fiesta🎉 </button>
+                <button class="boton" type="submit" id="sacar" onclick='sacar(${infoArtista.id})'> Quitar de Fiesta🎉 </button>
             </div>
         `
     }
