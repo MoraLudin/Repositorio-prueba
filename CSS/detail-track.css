@@ -22,23 +22,6 @@
     justify-content: center; 
 } 
 
-.icono{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-    margin-right:2% ;
-  
-} 
-.iconito{
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    box-sizing: border-box;
-    margin: 1%;
-    padding: 1%;
-}
 
 
 .cancion{
@@ -51,6 +34,7 @@
     font-size: 180%;
     padding-top: 1%;
 }
+
 .detailalaire,.infoalaire{
     display: flex;
     flex-direction: column;
@@ -64,12 +48,6 @@
     margin-left: 10%;
 }
 
-
-/* 
-.dataalaire{
-    display: flex;
-    flex-direction: column;
-} */
 
 .alaire{
     display: flex;
@@ -230,7 +208,7 @@ h3{
     }
     .peaches,.alaire{
         display: flex;
-        /* justify-content: space-around; */
+        justify-content: space-around; 
         flex-direction: column;
         box-sizing: border-box;
         justify-content: center;
@@ -240,6 +218,7 @@ h3{
         font-size: 100%;
         margin: 2%;
         margin-bottom: 1%; 
+        margin-left: 30%;
     }
     h3{
         margin: 2%;
