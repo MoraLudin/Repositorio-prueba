@@ -20,23 +20,20 @@ for (let index = 0; index < favoritos.length; index++) {
     probando.innerHTML += `
         <img class="playimage" src="${infoArtista[0]}">
         <a href="../HTML/detail-track.html?songId=${favoritos[index]}"><h3 class="titulo" >${infoArtista[1]}</h3></a>
-        
+        <button type="submit" id="sacar"> Quitar de Fiesta🎉 </button>
        
     `
 
-
-    /* infoArtistas.push(JSON.parse(localStorage.getItem(favoritos[index])));
-    console.log(infoArtistas);
-     */
-
-
    
-
 }
 let sacarboton= document.getElementById('sacar')
-addEventListener('onClick', function(){
-    localStorage.clear(sacarboton)
+sacarboton.addEventListener('click', function(){
+    localStorage.removeItem(songId)
 })
+
+
+
+
 
 /* /window.addEventListener("load",function(){
     const proxy= `https://cors-anywhere.herokuapp.com/`;
