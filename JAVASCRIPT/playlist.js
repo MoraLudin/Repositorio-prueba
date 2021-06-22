@@ -23,12 +23,16 @@ for (let index = 0; index < favoritos.length; index++) {
         <button type="submit" id="sacar"> Quitar de Fiesta🎉 </button>
        
     `
-   
-   
+
 }
+let sacarboton= document.getElementById('sacar')
+sacarboton.addEventListener('click', function(){
+    // localStorage.removeItem(songId) no anda parametro, pero es el id
+})
+
 
 
 /* let sacarboton= document.getElementById('sacar')
 sacarboton.addEventListener('click', function(){
     localStorage.removeItem(`${favoritos[index]}`)
-})  */
+})  esto va adentro del for*/
