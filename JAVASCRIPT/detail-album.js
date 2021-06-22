@@ -1,8 +1,8 @@
 window.addEventListener('load', function(){
     const proxy = 'https://cors-anywhere.herokuapp.com/';
-    let querystring = location.search
-    let albumquery = new URLSearchParams (querystring)
-    let albumId = albumquery.get('albumId')
+    let queryString = location.search
+    let albumQuery = new URLSearchParams (queryString)
+    let albumId = albumQuery.get('albumId')
 console.log(albumId)
 
 fetch(`${proxy}https://api.deezer.com/album/${albumId}`)
