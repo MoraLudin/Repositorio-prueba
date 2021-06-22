@@ -24,6 +24,7 @@ for (let index = 0; index < favoritos.length; index++) {
        
     `
 
+
     /* infoArtistas.push(JSON.parse(localStorage.getItem(favoritos[index])));
     console.log(infoArtistas);
      */
@@ -32,7 +33,10 @@ for (let index = 0; index < favoritos.length; index++) {
    
 
 }
-
+let sacarboton= document.getElementById('sacar')
+addEventListener('onClick', function(){
+    localStorage.clear(sacarboton)
+})
 
 /* /window.addEventListener("load",function(){
     const proxy= `https://cors-anywhere.herokuapp.com/`;
@@ -137,7 +141,7 @@ for (let index = 0; index < favoritos.length; index++) {
     <h3> ${datos.data[13].name} </h3>
     `;
     songs14.innerHTML+= `
-   <img src= "${datos.data[14].picture_medium}>
+   <img src= "${datos.data[14].picture_medium}">
     <h3> ${datos.data[14].name} </h3>
     `;
     

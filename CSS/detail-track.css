@@ -51,6 +51,18 @@
     font-size: 180%;
     padding-top: 1%;
 }
+.detailalaire,.infoalaire{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 150%;
+    
+}
+.alairesong{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
 
 
 /* 
