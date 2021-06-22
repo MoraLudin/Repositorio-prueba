@@ -1,3 +1,4 @@
+window.addEventListener('load', function(){
 let querystring = location.search;
 let datos = new URLSearchParams(querystring);
 let resultados = datos.get("search");
@@ -24,7 +25,7 @@ for (let index = 0; index < busqueda.length; index++) {
     lista.innerHTML += '<a href="detail-track.html?songId='+busqueda[index].id+'"><li> '+busqueda[index].title+', '+busqueda[index].artist.name+' </li></a>'
    
 }
-
+})
 
 
 

@@ -27,7 +27,23 @@ fetch(`${proxy}https://api.deezer.com/album/${albumId}`)
         <a class="deminame" href="../HTML/detail-genres.html?id=${datos.genres.data[0].id}"><h3> Género: ${datos.genres.data[0].name}</h3></a>
         `;
 
-{/* <a class="deminame" href="../HTML/detail-genres.html?id=${datos.genres.data[0].id}"><h3>Género:${datos.genres.data[1].id}</h3></a>
+        let albumsongs = document.querySelector('.seccion1')
+        let tracks = datos.tracks.data
+
+        for (let index = 0; index < tracks.length; index++) {
+            albumsongs.innerHTML += `
+        <div class="dancingsongs">
+            <a class="songtext" href="../HTML/detail-track.html?songId=${tracks[index].id}"><h4>${tracks[index].title}</h4></a>
+        </div>
+        `
+            
+        }
+
+        
+
+
+{
+    /* <a class="deminame" href="../HTML/detail-genres.html?id=${datos.genres.data[0].id}"><h3>Género:${datos.genres.data[1].id}</h3></a>
         <h3 class="deminame">Fecha de publicación: 2/04/21</h3> */
     }
  /*    <a class="deminame" href="../HTML/detail-genres.html?id=${datos.genres.data[0].id}"><h3>Género:${datos.genres.data[1].name}</h3></a> */
