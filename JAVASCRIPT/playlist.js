@@ -28,7 +28,7 @@ for (let index = 0; index < favoritos.length; index++) {
 }
 let sacarboton= document.getElementById('sacar')
 sacarboton.addEventListener('click', function(){
-    localStorage.removeItem(songId)
+    // localStorage.removeItem(songId) no anda parametro, pero es el id
 })
 
 
