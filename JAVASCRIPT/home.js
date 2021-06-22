@@ -15,8 +15,8 @@ window.addEventListener('load', function(){
            /* localStorage.setItem("locationpeaches", JSON.stringify(datos)); */
    
        /* imagen y info track peaches */
-           let peachestrackimg = document.querySelector(".trackpeaches");
-           peachestrackimg.innerHTML += `
+           let peachesTrackImg = document.querySelector(".trackpeaches");
+           peachesTrackImg.innerHTML += `
            <img class="peaches" src= "${datos.album.cover_medium}"> 
            <a href="../HTML/detail-track.html?songId=${datos.id}"><h3 class="datos">${datos.title}, ${datos.artist.name}</h3> </a>
            `;
@@ -28,9 +28,9 @@ window.addEventListener('load', function(){
 
 /* alaire track */
     let idAlaire = '1133364592'
-    let alaire = `${proxy}https://api.deezer.com/track/${idAlaire}`;
+    let alAire = `${proxy}https://api.deezer.com/track/${idAlaire}`;
 
- fetch(alaire)
+ fetch(alAire)
     .then(function(response){
         return response.json();
     })
@@ -39,8 +39,8 @@ window.addEventListener('load', function(){
         /* localStorage.setItem("locationalaire", JSON.stringify(datos)); */
 
     /* imagen y info track alaire */
-        let alairetrackimg = document.querySelector(".trackalaire");
-        alairetrackimg.innerHTML += `
+        let alAireTrackImg = document.querySelector(".trackalaire");
+        alAireTrackImg.innerHTML += `
         <img class="alaire" src= "${datos.album.cover_medium}"> 
         <a href="../HTML/detail-track.html?songId=${datos.id}"><h3 class="datos">${datos.title}, ${datos.artist.name}</h3> </a>
         `;
@@ -63,8 +63,8 @@ window.addEventListener('load', function(){
            /* localStorage.setItem("location22", JSON.stringify(datos)); */
    
        /* imagen y info track 22 */
-           let veintidostrackimg = document.querySelector(".track22");
-           veintidostrackimg.innerHTML += `
+           let veintidosTrackImg = document.querySelector(".track22");
+           veintidosTrackImg.innerHTML += `
            <img class="veintidos" src= "${datos.album.cover_medium}"> 
            <a href="../HTML/detail-track.html?songId=${datos.id}"><h3 class="datos">${datos.title}, ${datos.artist.name}</h3> </a>
            `;
@@ -75,9 +75,9 @@ window.addEventListener('load', function(){
 
     /* ropacara track */
     let idRopacara = '1260566352'
-    let ropacara = `${proxy}https://api.deezer.com/track/${idRopacara}`;
+    let ropaCara = `${proxy}https://api.deezer.com/track/${idRopacara}`;
 
-    fetch(ropacara)
+    fetch(ropaCara)
        .then(function(response){
            return response.json();
        })
@@ -86,8 +86,8 @@ window.addEventListener('load', function(){
            /* localStorage.setItem("locationropacara", JSON.stringify(datos)); */
    
        /* imagen y info track ropacara */
-           let ropacaratrackimg = document.querySelector(".trackropacara");
-           ropacaratrackimg.innerHTML += `
+           let ropaCaraTrackImg = document.querySelector(".trackropacara");
+           ropaCaraTrackImg.innerHTML += `
            <img class="ropacara" src= "${datos.album.cover_medium}"> 
            <a href="../HTML/detail-track.html?songId=${datos.id}"><h3 class="datos">${datos.title}, ${datos.artist.name}</h3> </a>
            `;
@@ -109,8 +109,8 @@ window.addEventListener('load', function(){
            /* localStorage.setItem("locationdakiti", JSON.stringify(datos)); */
    
        /* imagen y info track dakiti */
-           let dakititrackimg = document.querySelector(".trackdakiti");
-           dakititrackimg.innerHTML += `
+           let dakitiTrackImg = document.querySelector(".trackdakiti");
+           dakitiTrackImg.innerHTML += `
            <img class="dakiti" src= "${datos.album.cover_medium}"> 
            <a href="../HTML/detail-track.html?songId=${datos.id}"><h3 class="datos">${datos.title}, ${datos.artist.name}</h3> </a>
            `;
@@ -133,8 +133,8 @@ window.addEventListener('load', function(){
                /* localStorage.setItem("locationdevil", JSON.stringify(datos)); */
        
            /* imagen y info album devil */
-               let devilalbumimg = document.querySelector(".albumdevil");
-               devilalbumimg.innerHTML += `
+               let devilAlbumImg = document.querySelector(".albumdevil");
+               devilAlbumImg.innerHTML += `
                <img class="devil" src= "${datos.cover_big}"> 
                 <a href="../HTML/detail-album.html?albumId=${datos.id}"><h3 class="datos">${datos.title}</h3> </a> 
                `;
@@ -156,8 +156,8 @@ window.addEventListener('load', function(){
                /* localStorage.setItem("locationbalas", JSON.stringify(datos)); */
        
            /* imagen y info album balas */
-               let balasalbumimg = document.querySelector(".albumbalas");
-               balasalbumimg.innerHTML += `
+               let balasAlbumImg = document.querySelector(".albumbalas");
+               balasAlbumImg.innerHTML += `
                <img class="balas" src= "${datos.cover_big}"> 
                 <a href="../HTML/detail-album.html?albumId=${datos.id}"><h3 class="datos">${datos.title}</h3> </a> 
                `;
@@ -179,8 +179,8 @@ window.addEventListener('load', function(){
                /* localStorage.setItem("locationtini", JSON.stringify(datos)); */
        
            /* imagen y info album tini */
-               let tinialbumimg = document.querySelector(".albumtini");
-               tinialbumimg.innerHTML += `
+               let tiniAlbumImg = document.querySelector(".albumtini");
+               tiniAlbumImg.innerHTML += `
                <img class="tini" src= "${datos.cover_big}"> 
                 <a href="../HTML/detail-album.html?albumId=${datos.id}"><h3 class="datos">${datos.title}</h3> </a> 
                `;
@@ -202,8 +202,8 @@ window.addEventListener('load', function(){
                /* localStorage.setItem("locationmanos", JSON.stringify(datos)); */
        
            /* imagen y info album manos */
-               let manosalbumimg = document.querySelector(".albummanos");
-               manosalbumimg.innerHTML += `
+               let manosAlbumImg = document.querySelector(".albummanos");
+               manosAlbumImg.innerHTML += `
                <img class="manos" src= "${datos.cover_big}"> 
                 <a href="../HTML/detail-album.html?albumId=${datos.id}"><h3 class="datos">${datos.title}</h3> </a> 
                `;
@@ -225,8 +225,8 @@ window.addEventListener('load', function(){
                /* localStorage.setItem("locationcolores", JSON.stringify(datos)); */
        
            /* imagen y info album colores */
-               let coloresalbumimg = document.querySelector(".albumcolores");
-               coloresalbumimg.innerHTML += `
+               let coloresAlbumImg = document.querySelector(".albumcolores");
+               coloresAlbumImg.innerHTML += `
                <img class="colores" src= "${datos.cover_big}"> 
                 <a href="../HTML/detail-album.html?albumId=${datos.id}"><h3 class="datos">${datos.title}</h3> </a> 
                `;
@@ -249,8 +249,8 @@ window.addEventListener('load', function(){
                /* localStorage.setItem("locationmorat", JSON.stringify(datos)); */
        
            /* imagen y info artist morat */
-               let moratartistimg = document.querySelector(".artistmorat");
-               moratartistimg.innerHTML += `
+               let moratArtistImg = document.querySelector(".artistmorat");
+               moratArtistImg.innerHTML += `
                <img class="morat" src= "${datos.picture_big}"> 
                 <a href="../HTML/detail-artist.html?artistId=${datos.id}"><h3 class="datos">${datos.name}</h3> </a> 
                `;
@@ -272,8 +272,8 @@ window.addEventListener('load', function(){
                    /* localStorage.setItem("locationmiley", JSON.stringify(datos)); */
            
                /* imagen y info artist miley */
-                   let mileyartistimg = document.querySelector(".artistmiley");
-                   mileyartistimg.innerHTML += `
+                   let mileyArtistImg = document.querySelector(".artistmiley");
+                   mileyArtistImg.innerHTML += `
                    <img class="miley" src= "${datos.picture_big}"> 
                     <a href="../HTML/detail-artist.html?artistId=${datos.id}"><h3 class="datos">${datos.name}</h3> </a> 
                    `;
@@ -295,8 +295,8 @@ window.addEventListener('load', function(){
                   /* localStorage.setItem("locationcamilo", JSON.stringify(datos)); */
          
               /* imagen y info artist camilo */
-                  let camiloartistimg = document.querySelector(".artistcamilo");
-                  camiloartistimg.innerHTML += `
+                  let camiloArtistImg = document.querySelector(".artistcamilo");
+                  camiloArtistImg.innerHTML += `
                   <img class="camilo" src= "${datos.picture_big}">
                    <a href="../HTML/detail-artist.html?artistId=${datos.id}"><h3 class="datos">${datos.name}</h3> </a>
                   `;
@@ -318,8 +318,8 @@ window.addEventListener('load', function(){
                   /* localStorage.setItem("locationjustin", JSON.stringify(datos)); */
          
               /* imagen y info artist justin */
-                  let justinartistimg = document.querySelector(".artistjustin");
-                  justinartistimg.innerHTML += `
+                  let justinArtistImg = document.querySelector(".artistjustin");
+                  justinArtistImg.innerHTML += `
                   <img class="justin" src= "${datos.picture_big}">
                    <a href="../HTML/detail-artist.html?artistId=${datos.id}"><h3 class="datos">${datos.name}</h3> </a>
                   `;
@@ -330,9 +330,9 @@ window.addEventListener('load', function(){
 
     /* badbunny artist */
    let idBadbunny = '10583405'
-   let badbunny = `${proxy}https://api.deezer.com/artist/${idBadbunny}`;
+   let badBunny = `${proxy}https://api.deezer.com/artist/${idBadbunny}`;
       
-           fetch(badbunny)
+           fetch(badBunny)
               .then(function(response){
                   return response.json();
               })
@@ -341,8 +341,8 @@ window.addEventListener('load', function(){
                   /* localStorage.setItem("locationbadbunny", JSON.stringify(datos)); */
          
               /* imagen y info artist badbunny */
-                  let badbunnyartistimg = document.querySelector(".artistbadbunny");
-                  badbunnyartistimg.innerHTML += `
+                  let badBunnyArtistImg = document.querySelector(".artistbadbunny");
+                  badBunnyArtistImg.innerHTML += `
                   <img class="badbunny" src= "${datos.picture_big}">
                    <a href="../HTML/detail-artist.html?artistId=${datos.id}"><h3 class="datos">${datos.name}</h3> </a>
                   `;

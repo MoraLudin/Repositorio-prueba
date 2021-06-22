@@ -2,10 +2,10 @@ window.addEventListener('load', function(){
 
 /* validacion formulario busqueda header */
 
-let formulariocompletar = document.querySelector("#busqueda");
+let formularioCompletar = document.querySelector("#busqueda");
 let buscador = document.querySelector("#buscador")
 
-formulariocompletar.addEventListener('submit', function (e) {
+formularioCompletar.addEventListener('submit', function (e) {
     e.preventDefault();
     if(buscador.value === ''){
         alert("Busque algo!");
