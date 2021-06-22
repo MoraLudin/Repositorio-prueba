@@ -32,26 +32,20 @@ fetch(`${proxy}https://api.deezer.com/track/${songId}`)
 
         let addplaylist = document.querySelector(".addplaylist")
         addplaylist.addEventListener("click", function(e){
-        e.preventDefault(); 
+            e.preventDefault();
 
-        let playlist = []
-
-        if (localStorage.getItem('playlist') === null) {
-                localStorage.setItem(songId, JSON.stringify(infoTrack));
-                playlist.push(songId); 
+            if (localStorage.getItem('playlist') === null) {
+                let playlist = []
+                playlist.push(infoTrack); 
                 localStorage.setItem('playlist', JSON.stringify(playlist));
-            
-        }else {
-                localStorage.setItem(songId, JSON.stringify(infoTrack));
+                
+            } else {
                 let playlist = JSON.parse(localStorage.getItem('playlist'));
-                /* playlist.push(JSON.parse(playlistString));  */
-                console.log(playlist);
-                /* console.log(playlist)
-                console.log(typeof(playlist)) */
-                playlist.push(songId);
-               localStorage.setItem('playlist', JSON.stringify(playlist));
-
-        }
+                if (!playlist.find(song => song.id === infoTrack.id)) {
+                    playlist.push(infoTrack);
+                    localStorage.setItem('playlist', JSON.stringify(playlist));
+                }
+            }
         })
     
        /*  let trackGuardado = JSON.parse(localStorage.getItem('playlist'));
@@ -68,13 +62,17 @@ fetch(`${proxy}https://api.deezer.com/track/${songId}`)
             playlist = JSON.parse (localStorage.getItem('playlist'));
         }
  */
-console.log(datos);
-        let infoTrack = [
-            `${datos.album.cover_big}`,
+        let infoTrack = {
+            cover_big: datos.album.cover_big,
+            title: datos.title,
+            id: datos.id,
+            preview: datos.preview
+        }
+            /* `${}`,
             `${datos.title}`,
             `${datos.id}`,
             `${datos.preview}`
-        ]
+        ] */
 
     /* imagen para detalle DE LA CANCION QUE HAYAS PRESIONADO*/
         let alairedetail = document.querySelector(".detailalaire");
