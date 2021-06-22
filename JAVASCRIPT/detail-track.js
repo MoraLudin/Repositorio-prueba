@@ -87,7 +87,7 @@ fetch(`${proxy}https://api.deezer.com/track/${songId}`)
        
         <h2 class="alaire">Titulo: ${datos.title}</h2> 
         <a href="../HTML/detail-artist.html?artistId=${datos.artist.id}"><h2 class="alaire1">Artista: ${datos.artist.name}</h2></a>
-        <h2 class="alaire2">Album: ${datos.album.title}</h2>
+        <a href="../HTML/detail-album.html?albumId=${datos.album.id}"><h2 class="alaire2">Album: ${datos.album.title}</h2></a>
         `; 
 
         let alairerep = document.querySelector(".player");

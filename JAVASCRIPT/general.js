@@ -7,8 +7,10 @@ let buscador = document.querySelector("#buscador")
 
 formulariocompletar.addEventListener('submit', function (e) {
     e.preventDefault();
-    if(buscador.value === ''||buscador.value.length < 3){
-        alert("Escriba un artista!");
+    if(buscador.value === ''){
+        alert("Busque algo!");
+    } else if (buscador.value.length < 3) {
+        alert("Su busqueda debe ser mayor a 3 caracteres")
     } else {
         this.submit()
     }
