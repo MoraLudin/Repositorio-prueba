@@ -5,6 +5,7 @@ window.addEventListener('load', function(){
     let albumId = albumQuery.get('albumId')
     console.log(albumId)
 
+
     fetch(`${proxy}https://api.deezer.com/album/${albumId}`)
         .then(function(response){
             return response.json ()
@@ -25,6 +26,7 @@ window.addEventListener('load', function(){
             albumData.innerHTML += `
             <a class="deminame" href="../HTML/detail-artist.html?artistId=${datos.artist.id}"><h3>${datos.artist.name}</h3></a>
             <a class="deminame" href="../HTML/detail-genres.html?id=${datos.genres.data[0].id}"><h3> Género: ${datos.genres.data[0].name}</h3></a>
+            <h3 class="deminame"> Fecha de publicación: ${datos.release_date}</h3>
             `;
 
             let albumSongs = document.querySelector('.seccion1')

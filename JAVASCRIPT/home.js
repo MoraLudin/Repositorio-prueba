@@ -39,7 +39,7 @@ window.addEventListener('load', function(){
     /* imagen y info track alaire */
         let alAireTrackImg = document.querySelector(".trackalaire");
         alAireTrackImg.innerHTML += `
-        <img class="alaire" src= "${datos.album.cover_medium}"> 
+        <img class="alairesong" src= "${datos.album.cover_medium}"> 
         <a href="../HTML/detail-track.html?songId=${datos.id}"><h3 class="datos">${datos.title}, ${datos.artist.name}</h3> </a>
         `;
         })
@@ -115,7 +115,7 @@ window.addEventListener('load', function(){
 
 /* albums */
 /* devil album */
-    let idDevil = '217802232'
+    let idDevil = '217940522'
     let devil = `${proxy}https://api.deezer.com/album/${idDevil}`;
     
     fetch(devil)
