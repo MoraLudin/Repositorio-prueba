@@ -10,8 +10,14 @@
     margin-left: 2%;
 }
 
-.resultados{
-    /* display: flex;
+.loading{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* .resultados{
+    display: flex;
     justify-content: space-between;
     flex-direction: row;
     box-sizing: border-box;
@@ -19,8 +25,8 @@
     width: 100%;
     margin-left: 25%;
     margin-bottom: 2%;
-    padding-bottom: 2%; */
-} 
+    padding-bottom: 2%;
+}  */
 
 .relacionados{
     display: flex;
