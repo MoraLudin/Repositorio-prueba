@@ -20,7 +20,7 @@ h1{
 h2{
     text-align: center;
 }
- .rockgenero1,.rockgenero2{
+ .rockgenero1/* ,.rockgenero2 */{
      width: 18%;
      margin-right: 2%;
      margin-left: 2%;
@@ -33,11 +33,11 @@ h2{
 
 @media(max-width:420px){
 
- .generalgeneros{
+  .generalgeneros{
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
- }
+ } 
  .rock{
      width: 100%;
 
@@ -51,7 +51,7 @@ h2{
     width: 100%;  
     align-items: center;
  } 
- .rockgenero1,.rockgenero2{
+ .rockgenero1/* ,.rockgenero2 */{
     width: 80%;
     margin-right:2% ;
     margin-left: 2%;

@@ -9,20 +9,6 @@
     margin-top: 1%;
 }
 
-/* .wikipedia{
-    display: flex;
-    box-sizing: border-box;
-    flex-wrap: nowrap;
-    justify-content: center;
-    text-align: center;
-    color: black;
-    font-size: 100%;
-    margin-right: 17%;
-    margin-left: 16%;
-    margin-top: 2%;
-    margin-bottom: 5%;
-    font-style: italic;
-} */
 
 .top5canciones{
     display: flex;
@@ -31,7 +17,7 @@
     justify-content: center;
     color: rgb(7, 6, 6);
     font-size: 200%;
-}
+} 
 
 .imgmorat{
     display: flex;
@@ -45,40 +31,30 @@
 .perfilmorat{
     width: 100%;
     height: 100%; 
-  margin-left: 50%;
-  margin-top: 5%;
+    margin-left: 55%;
+    margin-top: 5%;
 }
 
 .top{
-    display: flex;
+     display: flex;
      justify-content: space-between;
-    flex-direction: row;
+     flex-direction: row;
      box-sizing: border-box;
      justify-content: center;
      flex-wrap: nowrap;
      margin-left: 3%;
-     margin-right: 3%;
-  
-     
- }
- .morat5{
-     width: 90%;
-     margin-right: 4%;
-     margin-left: 4%;
-     padding: 2%;
-     border-radius: 50%;  
+     margin-right: 3%;    
+}
 
- }
-
- h2{
+h2{
      text-align: center;
- }
- .artissongs{
+}
+
+.artissongs{
      width: 13%;
+}
  
- }
- 
-.top5,.top5b,.top5c,.top5d,.top5e{
+.top5{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -87,7 +63,7 @@
     width: 100%;
 } 
 
-.divtop5,.divtop5b,.divtop5c,.divtop5d,.divtop5e{
+.divtop5{
     width: 25%;
     height: 30%;
     margin: 1%;
@@ -98,14 +74,6 @@
 }
 
  @media(max-width:420px){
-    .morat5{
-        width: 97%;
-        margin-right: 4%;
-        margin-left: 4%;
-        padding: 2%;
-        border-radius: 50%;  
-   
-    }
    
     .artissongs{
         width: 60%;
@@ -121,7 +89,7 @@
         box-sizing: border-box;
         flex-wrap: nowrap;
         justify-content: center;
-        color: white;
+        color: black;
         font-size: 100%;
         margin-top: 3%;
     }
@@ -145,25 +113,29 @@
     
     }
 
-   .perfilmorat{
-    width: 100%;
-    height: 100%; 
-    margin-left: 20%; 
+    .perfilmorat{
+        width: 100%;
+        height: 100%; 
+        margin-left: 18%; 
  
     }
 
-    .wikipedia{
+    .top5{
         display: flex;
+        justify-content: space-between;
+        flex-direction: row;
         box-sizing: border-box;
-        flex-wrap: nowrap;
         justify-content: center;
+        width: 100%;
+    } 
+    
+    .divtop5{
+        width: 50%;
+        height: 100%;
+        margin: 1%;
+        padding: 1%; 
         text-align: center;
-        color: black;
-        font-size: 80%;
-        margin-right: 10%;
-        margin-left: 10%;
-        margin-top: 2%;
-        margin-bottom: 5%;
-        font-style: italic;
+        font-size: 90%;
+        background-color: rgba(143, 9, 9, 0.495);
     }
  }

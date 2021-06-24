@@ -70,18 +70,17 @@ h2,.datos{
 }
 
 
-
 @media (max-width:420px){
 
  header{
-        display: flex;
-        background-color:rgba(29, 25, 34, 0.221);
-        flex-direction: column;
-       justify-content: space-around;
-        list-style: none;
-        text-decoration: none;
-       align-items: center;
-       margin-right: 1%;
+    display: flex;
+    background-color:rgba(29, 25, 34, 0.221);
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+    margin-right: 1%;
  }
  .logo{
     display: flex;

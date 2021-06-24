@@ -20,7 +20,7 @@
 .demialbum{
     width: 50%;
     height: 100%; 
-  margin-left: 50%;
+   margin-left: 50%;
 }
 
 
@@ -45,36 +45,30 @@
     margin-left: 1%;
     text-decoration: underline;
     font-size: 130%;
- }
+}
  
- .canciongrande{
+.canciongrande{
     display: flex;
     box-sizing: border-box;
     flex-direction: row;
     width: 100%;
- }
- .seccion1,.seccion2{
+}
+ 
+.seccion1{
     display: flex;
     box-sizing: border-box;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
- }
+        
+}
  
-.anyone{
-    display: flex;
-    width: 40%;
-    border-radius: 30%;
-    margin-right: 4%;
-    margin-left: 4%;
-    margin-top: 2%;
-    margin-bottom: 3%;
- } 
-
- .dancingsongs{
+.dancingsongs{
      display: flex;
      flex-direction: row;
      flex-wrap: nowrap;
-     width: 85%;
+     width: 100%;
+     background-color: rgba(203, 5, 5, 0.283);
+     margin-top: 2%;
 
 }
 .songtext{
@@ -84,6 +78,9 @@
     color: black;
     font-size: 120%;
     align-items: center;
+    justify-content: space-around;
+    margin-left: 3%;
+   
 }
 @media(max-width:420px){
 
@@ -109,22 +106,14 @@
     color: white;
     font-size: 100%;
  }
- .anyone{
-        display: flex;
-        width: 20%;
-        border-radius: 30%;
-        margin-right: 4%;
-        margin-left: 4%;
-        margin-top: 2%;
-        margin-bottom: 3%;
- } 
+ 
  .canciongrande{
     display: none;
     box-sizing: none;
     flex-direction: none;
     width: 0;
  }
- .seccion1,.seccion2{
+ .seccion1{
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
@@ -132,17 +121,18 @@
  }
 
  .canciones{
-        display: flex;
-        box-sizing: border-box;
-        justify-content: left;
-        color: black;
-        width: 30%;
-        margin-right: 50%;
-        margin-left: 1%;
-        text-decoration: underline;
-        font-size: 130%;
-        margin-top: 13%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: left;
+    color: black;
+    width: 30%;
+    margin-right: 50%;
+    margin-left: 1%;
+    text-decoration: underline;
+    font-size: 130%;
+    margin-top: 13%;
  }
+
  .dancing{
     color: black;
     display: flex;
@@ -153,5 +143,5 @@
     font-size: 160%;
     padding-top: 2%;
     margin-top: 3%;
-}
+ }
 }
