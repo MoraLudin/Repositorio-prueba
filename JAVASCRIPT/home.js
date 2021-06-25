@@ -12,7 +12,7 @@ window.addEventListener('load', function(){
         })
        .then(function(datos){
            console.log(datos);
-           /* localStorage.setItem("locationpeaches", JSON.stringify(datos)); */
+           
    
        /* imagen y info track peaches */
            let peachesTrackImg = document.querySelector(".trackpeaches");

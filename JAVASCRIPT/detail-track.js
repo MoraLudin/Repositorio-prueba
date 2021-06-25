@@ -25,11 +25,13 @@ window.addEventListener('load', function(){
                     localStorage.setItem('playlist', JSON.stringify(playlist)); 
                 } else {
                     let playlist = JSON.parse(localStorage.getItem('playlist'));
-                /* para no poder agregar dos veces la misma cancion */
-                if (!playlist.find(song => song.id === infoTrack.id)){
                     playlist.push(infoTrack);
                     localStorage.setItem('playlist', JSON.stringify(playlist));
-                }
+                /* para no poder agregar dos veces la misma cancion */
+                /* if (!playlist.find(song => song.id === infoTrack.id)){
+                    playlist.push(infoTrack);
+                    localStorage.setItem('playlist', JSON.stringify(playlist));
+                } */
                 }
             })
 
