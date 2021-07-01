@@ -26,7 +26,9 @@ window.addEventListener('load', function(){
                 } else {
                     let playlist = JSON.parse(localStorage.getItem('playlist'));
                 /* para no poder agregar dos veces la misma cancion */
-                if (!playlist.find(song => song.id === infoTrack.id)){
+                if (!playlist.find(function(song) {
+                    return song.id === infoTrack.id
+                })){
                     playlist.push(infoTrack);
                     localStorage.setItem('playlist', JSON.stringify(playlist));
                 }
