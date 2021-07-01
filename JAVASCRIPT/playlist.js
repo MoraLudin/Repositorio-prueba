@@ -16,11 +16,12 @@ if (favoritos) {
     }
 }
 
-function sacar(songId) {
+function sacar(infoArtistaId) {
     let songIndex = favoritos.findIndex(function(song) {
-        return song.id === songId
+        return song.id === infoArtistaId
     })
     favoritos.splice(songIndex, 1) /* me saca el id de la cancion que presione, me saca una posicion del index que es la que estoy apretando */
     localStorage.setItem('playlist', JSON.stringify(favoritos));/* 'crea' denuevo playlist en el local storage una vez que se saco la que aprete */
     document.location.reload()
+    
 }
