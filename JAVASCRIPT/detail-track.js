@@ -33,7 +33,7 @@ window.addEventListener('load', function(){
                 })){
                     playlist.push(infoTrack);
                     localStorage.setItem('playlist', JSON.stringify(playlist));
-                } */
+                }
                 }
             })
 
